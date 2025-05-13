@@ -1,0 +1,681 @@
+Original Tagalog,Tokens,Reference English,Parsed,Parsed Tree (Compact),Parsed Tree (Pretty Single Line),Rewritten Tree (Compact),Rewritten Tree (Pretty Single Line),Rewritten Tagalog Text,Simple Lexical Translation
+"Paano mo sabihin ang ""paalam"" sa Aleman?","paano mo sabihin ang ""paalam"" sa aleman?","How do you say ""good bye"" in German?",True,"(S
+  (Adv paano)
+  (NP (Pronoun mo))
+  (V sabihin)
+  (NP (DET ang) (N ""paalam""))
+  (PP (P sa) (N aleman?)))","(S  (Adv paano)  (NP (Pronoun mo))  (V sabihin)  (NP (DET ang) (N ""paalam""))  (PP (P sa) (N aleman?)))","(S
+  (Adv paano)
+  (NP (Pronoun mo))
+  (V sabihin)
+  (NP (DET ang) (N ""paalam""))
+  (PP (P sa) (N aleman?)))","(S  (Adv paano)  (NP (Pronoun mo))  (V sabihin)  (NP (DET ang) (N ""paalam""))  (PP (P sa) (N aleman?)))","paano mo sabihin ang ""paalam"" sa aleman?","How you/your say [ang] [""paalam""] to/at/in [aleman?]"
+Diyos ang lumikha sa mundo.,diyos ang lumikha sa mundo.,God created the world.,True,(S (NP (N diyos)) (DET ang) (VP (V lumikha) (NP (P sa) (N mundo.)))),(S (NP (N diyos)) (DET ang) (VP (V lumikha) (NP (P sa) (N mundo.)))),(S (NP (N diyos)) (DET ang) (VP (V lumikha) (NP (P sa) (N mundo.)))),(S (NP (N diyos)) (DET ang) (VP (V lumikha) (NP (P sa) (N mundo.)))),diyos ang lumikha sa mundo.,God [ang] created to/at/in [mundo.]
+Kamusta ka na?,kamusta ka na?, How are you?,True,(S (V kamusta) (NP (NP (Pronoun ka)) (N na?))),(S (V kamusta) (NP (NP (Pronoun ka)) (N na?))),(S (V kamusta) (NP (NP (Pronoun ka)) (N na?))),(S (V kamusta) (NP (NP (Pronoun ka)) (N na?))),kamusta ka na?,How is/are you [na?]
+Tara na agad,tara na agad,Let's go now,True,(S (Interjection tara) (Adv na) (Adv agad)),(S (Interjection tara) (Adv na) (Adv agad)),(S (Interjection tara) (Adv na) (Adv agad)),(S (Interjection tara) (Adv na) (Adv agad)),tara na agad,Let's go now/already immediately
+Kumain ka na?,kumain ka na?,Have you eaten yet?,True,(S (V kumain) (NP (NP (Pronoun ka)) (N na?))),(S (V kumain) (NP (NP (Pronoun ka)) (N na?))),(S (V kumain) (NP (NP (Pronoun ka)) (N na?))),(S (V kumain) (NP (NP (Pronoun ka)) (N na?))),kumain ka na?,Ate/eaten you [na?]
+Paano ang tanggapan?,paano ang tanggapan?,What about the office?,True,(S (Interrogative paano) (DET ang) (N tanggapan?)),(S (Interrogative paano) (DET ang) (N tanggapan?)),(S (Interrogative paano) (DET ang) (N tanggapan?)),(S (Interrogative paano) (DET ang) (N tanggapan?)),paano ang tanggapan?,How [ang] [tanggapan?]
+Magdadala ako sa iyo doon.,magdadala ako sa iyo doon.,I'll take you there.,True,"(S
+  (V magdadala)
+  (NP (Pronoun ako))
+  (PP (P sa) (NP (NP (N iyo)) (N doon.))))",(S  (V magdadala)  (NP (Pronoun ako))  (PP (P sa) (NP (NP (N iyo)) (N doon.)))),"(S
+  (V magdadala)
+  (NP (Pronoun ako))
+  (PP (P sa) (NP (NP (N iyo)) (N doon.))))",(S  (V magdadala)  (NP (Pronoun ako))  (PP (P sa) (NP (NP (N iyo)) (N doon.)))),magdadala ako sa iyo doon.,Will bring i to/at/in [iyo] [doon.]
+Kumusta po kayo?,kumusta po kayo?,How are you?,True,(S (VP (V kumusta) (Particle po)) (NP (N kayo?))),(S (VP (V kumusta) (Particle po)) (NP (N kayo?))),(S (NP (N kayo?)) (VP (V kumusta) (Particle po))),(S (NP (N kayo?)) (VP (V kumusta) (Particle po))),kayo? kumusta po,[kayo?] how is/are [po]
+Sila’y isinilang na may budhi at katwiran,sila’y isinilang na may budhi at katwiran,They were born with a conscience and reason.,True,"(S
+  (NP (NP (N sila’y)) (V isinilang))
+  (Adv na)
+  (V may)
+  (NP (NP (N budhi)) (CONJ at) (NP (N katwiran))))",(S  (NP (NP (N sila’y)) (V isinilang))  (Adv na)  (V may)  (NP (NP (N budhi)) (CONJ at) (NP (N katwiran)))),"(S
+  (NP (NP (N sila’y)) (V isinilang))
+  (Adv na)
+  (V may)
+  (NP (NP (N budhi)) (CONJ at) (NP (N katwiran))))",(S  (NP (NP (N sila’y)) (V isinilang))  (Adv na)  (V may)  (NP (NP (N budhi)) (CONJ at) (NP (N katwiran)))),sila’y isinilang na may budhi at katwiran,[sila’y] was born now/already have/has/there is conscience and reason
+"Pakiusap, intindihin mo na lang ang trabaho mo.","pakiusap, intindihin mo na lang ang trabaho mo.","Just mind your own business, please.",True,"(S
+  (NP (N pakiusap,))
+  (VP
+    (V intindihin)
+    (Pronoun mo)
+    (NP
+      (NP (Adv na) (NP (Adv lang) (NP (DET ang) (N trabaho))))
+      (N mo.))))","(S  (NP (N pakiusap,))  (VP   (V intindihin)   (Pronoun mo)   (NP    (NP (Adv na) (NP (Adv lang) (NP (DET ang) (N trabaho))))    (N mo.))))","(S
+  (NP (N pakiusap,))
+  (VP
+    (V intindihin)
+    (Pronoun mo)
+    (NP
+      (NP (Adv na) (NP (Adv lang) (NP (DET ang) (N trabaho))))
+      (N mo.))))","(S  (NP (N pakiusap,))  (VP   (V intindihin)   (Pronoun mo)   (NP    (NP (Adv na) (NP (Adv lang) (NP (DET ang) (N trabaho))))    (N mo.))))","pakiusap, intindihin mo na lang ang trabaho mo.","[pakiusap,] understand/mind you/your now/already only/just [ang] work/job [mo.]"
+Natutulog nang magalit ang mga ideyang walang kulay at kulay berde.,natutulog nang magalit ang mga ideyang walang kulay at kulay berde.,Colorless green ideas sleep furiously.,False,Not Parsed,Not Parsed,Not Parsed,Not Parsed,Not Parsed,Sleeping when/of/so that get angry [ang] those [ideyang] [walang] color and color [berde.]
+Siya ay nagbebenta ng gamot sa botika.,siya ay nagbebenta ng gamot sa botika.,She sells medicine in the pharmacy.,True,"(S
+  (NP (Pronoun siya))
+  (AY ay)
+  (V nagbebenta)
+  (NP (P ng) (N gamot))
+  (PP (P sa) (N botika.)))",(S  (NP (Pronoun siya))  (AY ay)  (V nagbebenta)  (NP (P ng) (N gamot))  (PP (P sa) (N botika.))),"(S
+  (NP (Pronoun siya))
+  (AY ay)
+  (V nagbebenta)
+  (NP (P ng) (N gamot))
+  (PP (P sa) (N botika.)))",(S  (NP (Pronoun siya))  (AY ay)  (V nagbebenta)  (NP (P ng) (N gamot))  (PP (P sa) (N botika.))),siya ay nagbebenta ng gamot sa botika.,He/she [ay] selling of medicine to/at/in [botika.]
+Nais kong maging kaibigan si Nancy.,nais kong maging kaibigan si nancy.,I want to make friends with Nancy.,True,"(S
+  (V nais)
+  (NP (NP (NP (Pronoun kong)) (V maging)) (N kaibigan))
+  (NP (DET si) (N nancy.)))",(S  (V nais)  (NP (NP (NP (Pronoun kong)) (V maging)) (N kaibigan))  (NP (DET si) (N nancy.))),"(S
+  (V nais)
+  (NP (NP (NP (Pronoun kong)) (V maging)) (N kaibigan))
+  (NP (DET si) (N nancy.)))",(S  (V nais)  (NP (NP (NP (Pronoun kong)) (V maging)) (N kaibigan))  (NP (DET si) (N nancy.))),nais kong maging kaibigan si nancy.,Want/wish my to be/become friend [si] [nancy.]
+Nagsasaulo siya ng sampung salitang Ingles kada araw.,nagsasaulo siya ng sampung salitang ingles kada araw.,He memorized ten English words a day.,True,"(S
+  (V nagsasaulo)
+  (NP (Pronoun siya))
+  (PP (P ng) (NP (Number sampung) (N salitang)))
+  (NP (NP (NP (ProperName ingles)) (Adv kada)) (N araw.)))",(S  (V nagsasaulo)  (NP (Pronoun siya))  (PP (P ng) (NP (Number sampung) (N salitang)))  (NP (NP (NP (ProperName ingles)) (Adv kada)) (N araw.))),"(S
+  (V nagsasaulo)
+  (NP (Pronoun siya))
+  (PP (P ng) (NP (Number sampung) (N salitang)))
+  (NP (NP (NP (ProperName ingles)) (Adv kada)) (N araw.)))",(S  (V nagsasaulo)  (NP (Pronoun siya))  (PP (P ng) (NP (Number sampung) (N salitang)))  (NP (NP (NP (ProperName ingles)) (Adv kada)) (N araw.))),nagsasaulo siya ng sampung salitang ingles kada araw.,Memorizing he/she of ten [salitang] english each/per [araw.]
+"Huwag kang mag-alala, magpakasaya ka!","huwag kang mag-alala, magpakasaya ka!","Don't worry, be happy!",True,"(S
+  (V huwag)
+  (NP
+    (NP (NP (NP (Pronoun kang)) (N mag-alala,)) (V magpakasaya))
+    (N ka!)))","(S  (V huwag)  (NP   (NP (NP (NP (Pronoun kang)) (N mag-alala,)) (V magpakasaya))   (N ka!)))","(S
+  (V huwag)
+  (NP
+    (NP (NP (NP (Pronoun kang)) (N mag-alala,)) (V magpakasaya))
+    (N ka!)))","(S  (V huwag)  (NP   (NP (NP (NP (Pronoun kang)) (N mag-alala,)) (V magpakasaya))   (N ka!)))","huwag kang mag-alala, magpakasaya ka!","Don't you [mag-alala,] be happy [ka!]"
+Gumaling sa sipnayan ang anak ko ngayong taon na ito.,gumaling sa sipnayan ang anak ko ngayong taon na ito.,My son's ability at math has improved this year.,True,"(S
+  (V gumaling)
+  (NP (P sa) (N sipnayan))
+  (NP
+    (NP
+      (NP
+        (NP (NP (DET ang) (N anak) (Pronoun ko)) (Adv ngayong))
+        (N taon))
+      (Adv na))
+    (N ito.)))",(S  (V gumaling)  (NP (P sa) (N sipnayan))  (NP   (NP    (NP     (NP (NP (DET ang) (N anak) (Pronoun ko)) (Adv ngayong))     (N taon))    (Adv na))   (N ito.))),"(S
+  (V gumaling)
+  (NP (P sa) (N sipnayan))
+  (NP
+    (NP
+      (NP
+        (NP (NP (DET ang) (N anak) (Pronoun ko)) (Adv ngayong))
+        (N taon))
+      (Adv na))
+    (N ito.)))",(S  (V gumaling)  (NP (P sa) (N sipnayan))  (NP   (NP    (NP     (NP (NP (DET ang) (N anak) (Pronoun ko)) (Adv ngayong))     (N taon))    (Adv na))   (N ito.))),gumaling sa sipnayan ang anak ko ngayong taon na ito.,Improved/got well to/at/in mathematics [ang] child/son/daughter [ko] this year now/already [ito.]
+Naglakad ako papunta sa parke.,naglakad ako papunta sa parke.,I walked toward the park.,True,"(S
+  (VP (V naglakad) (NP (Pronoun ako)) (V papunta))
+  (NP (P sa) (N parke.)))",(S  (VP (V naglakad) (NP (Pronoun ako)) (V papunta))  (NP (P sa) (N parke.))),"(S
+  (NP (P sa) (N parke.))
+  (VP (V naglakad) (NP (Pronoun ako)) (V papunta)))",(S  (NP (P sa) (N parke.))  (VP (V naglakad) (NP (Pronoun ako)) (V papunta))),sa parke. naglakad ako papunta,To/at/in [parke.] walked i going to
+Ano’ng araw magsisimula?,ano’ng araw magsisimula?,What day does it start?,True,(S (NP (N ano’ng)) (NP (NP (N araw)) (N magsisimula?))),(S (NP (N ano’ng)) (NP (NP (N araw)) (N magsisimula?))),(S (NP (N ano’ng)) (NP (NP (N araw)) (N magsisimula?))),(S (NP (N ano’ng)) (NP (NP (N araw)) (N magsisimula?))),ano’ng araw magsisimula?,[ano’ng] day/sun [magsisimula?]
+Ano'ng klaseng trabaho ang papasukan mo?,ano'ng klaseng trabaho ang papasukan mo?,What kind of work will you do?,True,"(S
+  (NP (NP (NP (N ano'ng)) (N klaseng)) (N trabaho))
+  (NP (NP (DET ang) (V papasukan)) (N mo?)))",(S  (NP (NP (NP (N ano'ng)) (N klaseng)) (N trabaho))  (NP (NP (DET ang) (V papasukan)) (N mo?))),"(S
+  (NP (NP (NP (N ano'ng)) (N klaseng)) (N trabaho))
+  (NP (NP (DET ang) (V papasukan)) (N mo?)))",(S  (NP (NP (NP (N ano'ng)) (N klaseng)) (N trabaho))  (NP (NP (DET ang) (V papasukan)) (N mo?))),ano'ng klaseng trabaho ang papasukan mo?,[ano'ng] [klaseng] work/job [ang] will enter/apply for [mo?]
+Sampung taon na ang nakalipas mula nang dumating ako sa Tokyo.,sampung taon na ang nakalipas mula nang dumating ako sa tokyo.,It is ten years since I came to Tokyo.,True,"(S
+  (NP
+    (NP
+      (NP (Number sampung) (N taon))
+      (Particle na)
+      (NP (DET ang) (V nakalipas)))
+    (PP (P mula) (Adv nang)))
+  (VP (V dumating) (Pronoun ako) (NP (P sa) (N tokyo.))))",(S  (NP   (NP    (NP (Number sampung) (N taon))    (Particle na)    (NP (DET ang) (V nakalipas)))   (PP (P mula) (Adv nang)))  (VP (V dumating) (Pronoun ako) (NP (P sa) (N tokyo.)))),"(S
+  (NP
+    (NP
+      (NP (Number sampung) (N taon))
+      (Particle na)
+      (NP (DET ang) (V nakalipas)))
+    (PP (P mula) (Adv nang)))
+  (VP (V dumating) (Pronoun ako) (NP (P sa) (N tokyo.))))",(S  (NP   (NP    (NP (Number sampung) (N taon))    (Particle na)    (NP (DET ang) (V nakalipas)))   (PP (P mula) (Adv nang)))  (VP (V dumating) (Pronoun ako) (NP (P sa) (N tokyo.)))),sampung taon na ang nakalipas mula nang dumating ako sa tokyo.,Ten year now/already [ang] passed from when/of/so that arrived i to/at/in [tokyo.]
+Mukhang 19 taong gulang iyong mestiza na iyon.,mukhang 19 taong gulang iyong mestiza na iyon.,The girl with fair skin passes for nineteen.,True,"(S
+  (Adj
+    (Adj (Adj mukhang) (NP (Number 19) (N taong)))
+    (NP (NP (N gulang)) (N iyong)))
+  (NP (N mestiza) (Particle na) (N iyon.)))",(S  (Adj   (Adj (Adj mukhang) (NP (Number 19) (N taong)))   (NP (NP (N gulang)) (N iyong)))  (NP (N mestiza) (Particle na) (N iyon.))),"(S
+  (Adj
+    (Adj (Adj mukhang) (NP (Number 19) (N taong)))
+    (NP (NP (N gulang)) (N iyong)))
+  (NP (N mestiza) (Particle na) (N iyon.)))",(S  (Adj   (Adj (Adj mukhang) (NP (Number 19) (N taong)))   (NP (NP (N gulang)) (N iyong)))  (NP (N mestiza) (Particle na) (N iyon.))),mukhang 19 taong gulang iyong mestiza na iyon.,Looks/seems 19 person age [iyong] mestiza now/already [iyon.]
+Masama ang timpla ngayon.,masama ang timpla ngayon.,The mixture is bad now.,True,(S (NP (N masama)) (NP (NP (DET ang) (N timpla)) (N ngayon.))),(S (NP (N masama)) (NP (NP (DET ang) (N timpla)) (N ngayon.))),(S (NP (N masama)) (NP (NP (DET ang) (N timpla)) (N ngayon.))),(S (NP (N masama)) (NP (NP (DET ang) (N timpla)) (N ngayon.))),masama ang timpla ngayon.,[masama] [ang] mix/temper [ngayon.]
+Sampung taong gulang ako ngayon.,sampung taong gulang ako ngayon.,I am ten years old now.,True,"(S
+  (NP (NP (Number sampung) (N taong)) (N gulang))
+  (NP (NP (Pronoun ako)) (N ngayon.)))",(S  (NP (NP (Number sampung) (N taong)) (N gulang))  (NP (NP (Pronoun ako)) (N ngayon.))),"(S
+  (NP (NP (Number sampung) (N taong)) (N gulang))
+  (NP (NP (Pronoun ako)) (N ngayon.)))",(S  (NP (NP (Number sampung) (N taong)) (N gulang))  (NP (NP (Pronoun ako)) (N ngayon.))),sampung taong gulang ako ngayon.,Ten person age i [ngayon.]
+"Kahit umulan, nananatili siya sa paaralan.","kahit umulan, nananatili siya sa paaralan.","Even though it rains, he stays at school.",True,"(S
+  (NP (Adv kahit) (NP (N umulan,)))
+  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.))))","(S  (NP (Adv kahit) (NP (N umulan,)))  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.))))","(S
+  (NP (Adv kahit) (NP (N umulan,)))
+  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.))))","(S  (NP (Adv kahit) (NP (N umulan,)))  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.))))","kahit umulan, nananatili siya sa paaralan.","Even if/although [umulan,] staying he/she to/at/in [paaralan.]"
+May asong sumunod sa akin sa paaralan.,may asong sumunod sa akin sa paaralan.,A dog followed me to my school.,True,"(S
+  (V may)
+  (NP (NP (N asong)) (V sumunod))
+  (PP (P sa) (NP (Pronoun akin)))
+  (NP (P sa) (N paaralan.)))",(S  (V may)  (NP (NP (N asong)) (V sumunod))  (PP (P sa) (NP (Pronoun akin)))  (NP (P sa) (N paaralan.))),"(S
+  (V may)
+  (NP (NP (N asong)) (V sumunod))
+  (PP (P sa) (NP (Pronoun akin)))
+  (NP (P sa) (N paaralan.)))",(S  (V may)  (NP (NP (N asong)) (V sumunod))  (PP (P sa) (NP (Pronoun akin)))  (NP (P sa) (N paaralan.))),may asong sumunod sa akin sa paaralan.,Have/has/there is dog followed to/at/in my/mine to/at/in [paaralan.]
+Hindi niya kailangang magtrabaho.,hindi niya kailangang magtrabaho.,She doesn't need to work.,True,"(S
+  (V hindi)
+  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.)))",(S  (V hindi)  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.))),"(S
+  (V hindi)
+  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.)))",(S  (V hindi)  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.))),hindi niya kailangang magtrabaho.,Not his/her need to [magtrabaho.]
+Hindi niya kailangang magtrabaho.,hindi niya kailangang magtrabaho.,He doesn't need to work.,True,"(S
+  (V hindi)
+  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.)))",(S  (V hindi)  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.))),"(S
+  (V hindi)
+  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.)))",(S  (V hindi)  (NP (NP (NP (Pronoun niya)) (V kailangang)) (N magtrabaho.))),hindi niya kailangang magtrabaho.,Not his/her need to [magtrabaho.]
+Pagod siya sa kakalakad sa mga museo.,pagod siya sa kakalakad sa mga museo.,He was tired from walking round museums.,False,Not Parsed,Not Parsed,Not Parsed,Not Parsed,Not Parsed,Tired he/she to/at/in walking (repetitive) to/at/in those [museo.]
+Ano'ng klase ng karne ang ihinahain niyo?,ano'ng klase ng karne ang ihinahain niyo?,What kinds of meat dishes do you serve?,True,"(S
+  (NP (NP (NP (N ano'ng)) (N klase)) (PP (P ng) (N karne)))
+  (NP (NP (DET ang) (V ihinahain)) (N niyo?)))",(S  (NP (NP (NP (N ano'ng)) (N klase)) (PP (P ng) (N karne)))  (NP (NP (DET ang) (V ihinahain)) (N niyo?))),"(S
+  (NP (NP (NP (N ano'ng)) (N klase)) (PP (P ng) (N karne)))
+  (NP (NP (DET ang) (V ihinahain)) (N niyo?)))",(S  (NP (NP (NP (N ano'ng)) (N klase)) (PP (P ng) (N karne)))  (NP (NP (DET ang) (V ihinahain)) (N niyo?))),ano'ng klase ng karne ang ihinahain niyo?,[ano'ng] class/kind of meat [ang] serving [niyo?]
+Sigurado akong magreretiro siya sa trabaho niya. ,sigurado akong magreretiro siya sa trabaho niya.,I am certain that he will quit his job.,True,"(S
+  (NP
+    (Adj (Adj sigurado) (NP (NP (Pronoun akong)) (V magreretiro)))
+    (NP (Pronoun siya)))
+  (P sa)
+  (NP (NP (N trabaho)) (N niya.)))",(S  (NP   (Adj (Adj sigurado) (NP (NP (Pronoun akong)) (V magreretiro)))   (NP (Pronoun siya)))  (P sa)  (NP (NP (N trabaho)) (N niya.))),"(S
+  (NP
+    (Adj (Adj sigurado) (NP (NP (Pronoun akong)) (V magreretiro)))
+    (NP (Pronoun siya)))
+  (P sa)
+  (NP (NP (N trabaho)) (N niya.)))",(S  (NP   (Adj (Adj sigurado) (NP (NP (Pronoun akong)) (V magreretiro)))   (NP (Pronoun siya)))  (P sa)  (NP (NP (N trabaho)) (N niya.))),sigurado akong magreretiro siya sa trabaho niya.,Sure/certain i will retire he/she to/at/in work/job [niya.]
+Sinasabi nila na iwasan ang tsismis.,sinasabi nila na iwasan ang tsismis.,They say to avoid gossip.,True,"(S
+  (VP (V sinasabi) (NP (NP (N nila)) (Adv na)) (V iwasan))
+  (NP (DET ang) (N tsismis.)))",(S  (VP (V sinasabi) (NP (NP (N nila)) (Adv na)) (V iwasan))  (NP (DET ang) (N tsismis.))),"(S
+  (NP (DET ang) (N tsismis.))
+  (VP (V sinasabi) (NP (NP (N nila)) (Adv na)) (V iwasan)))",(S  (NP (DET ang) (N tsismis.))  (VP (V sinasabi) (NP (NP (N nila)) (Adv na)) (V iwasan))),ang tsismis. sinasabi nila na iwasan,[ang] [tsismis.] saying they now/already avoid
+Ayaw mo bang pumunta sa salusalo?,ayaw mo bang pumunta sa salusalo?,Don't you want to go to the party?,True,"(S
+  (VP (V ayaw) (NP (NP (Pronoun mo)) (Particle bang)) (V pumunta))
+  (NP (P sa) (N salusalo?)))",(S  (VP (V ayaw) (NP (NP (Pronoun mo)) (Particle bang)) (V pumunta))  (NP (P sa) (N salusalo?))),"(S
+  (NP (P sa) (N salusalo?))
+  (VP (V ayaw) (NP (NP (Pronoun mo)) (Particle bang)) (V pumunta)))",(S  (NP (P sa) (N salusalo?))  (VP (V ayaw) (NP (NP (Pronoun mo)) (Particle bang)) (V pumunta))),sa salusalo? ayaw mo bang pumunta,To/at/in [salusalo?] don't want you/your [bang] went
+"Madalas silang nag-uusap, harap-harapan at sa pamamagitan ng telepono.","madalas silang nag-uusap, harap-harapan at sa pamamagitan ng telepono.","They talk a lot to one another, over the telephone and in person.",True,"(S
+  (NP
+    (NP
+      (Adv madalas)
+      (NP
+        (NP (NP (Pronoun silang)) (N nag-uusap,))
+        (Adv harap-harapan)))
+    (CONJ at)
+    (NP (P sa) (N pamamagitan)))
+  (NP (P ng) (N telepono.)))","(S  (NP   (NP    (Adv madalas)    (NP     (NP (NP (Pronoun silang)) (N nag-uusap,))     (Adv harap-harapan)))   (CONJ at)   (NP (P sa) (N pamamagitan)))  (NP (P ng) (N telepono.)))","(S
+  (NP
+    (NP
+      (Adv madalas)
+      (NP
+        (NP (NP (Pronoun silang)) (N nag-uusap,))
+        (Adv harap-harapan)))
+    (CONJ at)
+    (NP (P sa) (N pamamagitan)))
+  (NP (P ng) (N telepono.)))","(S  (NP   (NP    (Adv madalas)    (NP     (NP (NP (Pronoun silang)) (N nag-uusap,))     (Adv harap-harapan)))   (CONJ at)   (NP (P sa) (N pamamagitan)))  (NP (P ng) (N telepono.)))","madalas silang nag-uusap, harap-harapan at sa pamamagitan ng telepono.","Often they [nag-uusap,] face-to-face and to/at/in means of [telepono.]"
+Sigurado siya na ayaw mong pumunta sa salusalo.,sigurado siya na ayaw mong pumunta sa salusalo.,nan,True,"(S
+  (NP
+    (NP
+      (Adj sigurado)
+      (NP (NP (NP (Pronoun siya)) (Adv na)) (V ayaw)))
+    (N mong))
+  (V pumunta)
+  (NP (P sa) (N salusalo.)))",(S  (NP   (NP    (Adj sigurado)    (NP (NP (NP (Pronoun siya)) (Adv na)) (V ayaw)))   (N mong))  (V pumunta)  (NP (P sa) (N salusalo.))),"(S
+  (NP
+    (NP
+      (Adj sigurado)
+      (NP (NP (NP (Pronoun siya)) (Adv na)) (V ayaw)))
+    (N mong))
+  (V pumunta)
+  (NP (P sa) (N salusalo.)))",(S  (NP   (NP    (Adj sigurado)    (NP (NP (NP (Pronoun siya)) (Adv na)) (V ayaw)))   (N mong))  (V pumunta)  (NP (P sa) (N salusalo.))),sigurado siya na ayaw mong pumunta sa salusalo.,Sure/certain he/she now/already don't want [mong] went to/at/in [salusalo.]
+Hindi siya nakarating kahapon.,hindi siya nakarating kahapon.,He failed to come yesterday.,True,"(S
+  (V hindi)
+  (NP (NP (NP (Pronoun siya)) (V nakarating)) (N kahapon.)))",(S  (V hindi)  (NP (NP (NP (Pronoun siya)) (V nakarating)) (N kahapon.))),"(S
+  (V hindi)
+  (NP (NP (NP (Pronoun siya)) (V nakarating)) (N kahapon.)))",(S  (V hindi)  (NP (NP (NP (Pronoun siya)) (V nakarating)) (N kahapon.))),hindi siya nakarating kahapon.,Not he/she arrived [kahapon.]
+Noon ay sampung taong gulang lang siya.,noon ay sampung taong gulang lang siya.,He was then a boy of ten.,True,"(S
+  (Adv noon)
+  (AY ay)
+  (NP (NP (Number sampung) (N taong)) (N gulang))
+  (Particle lang)
+  (NP (N siya.)))",(S  (Adv noon)  (AY ay)  (NP (NP (Number sampung) (N taong)) (N gulang))  (Particle lang)  (NP (N siya.))),"(S
+  (Adv noon)
+  (AY ay)
+  (NP (NP (Number sampung) (N taong)) (N gulang))
+  (Particle lang)
+  (NP (N siya.)))",(S  (Adv noon)  (AY ay)  (NP (NP (Number sampung) (N taong)) (N gulang))  (Particle lang)  (NP (N siya.))),noon ay sampung taong gulang lang siya.,Then/before [ay] ten person age only/just [siya.]
+Hindi mo masasabi kung gaano katagal itong mga pagpupulong na ito.,hindi mo masasabi kung gaano katagal itong mga pagpupulong na ito.,You can never tell how long these meetings will last.,False,Not Parsed,Not Parsed,Not Parsed,Not Parsed,Not Parsed,Not you/your can say if/when how much/many how long this those [pagpupulong] now/already [ito.]
+Dumating kami sa paliparan tatlong oras bago ang paglipad.,dumating kami sa paliparan tatlong oras bago ang paglipad.,We arrived at the airport three hours before our flight.,True,"(S
+  (VP (V dumating) (Pronoun kami) (NP (P sa) (N paliparan)))
+  (NP
+    (Adj tatlong)
+    (NP (N oras) (P bago) (NP (DET ang) (N paglipad.)))))",(S  (VP (V dumating) (Pronoun kami) (NP (P sa) (N paliparan)))  (NP   (Adj tatlong)   (NP (N oras) (P bago) (NP (DET ang) (N paglipad.))))),"(S
+  (NP
+    (Adj tatlong)
+    (NP (N oras) (P bago) (NP (DET ang) (N paglipad.))))
+  (VP (V dumating) (Pronoun kami) (NP (P sa) (N paliparan))))",(S  (NP   (Adj tatlong)   (NP (N oras) (P bago) (NP (DET ang) (N paglipad.))))  (VP (V dumating) (Pronoun kami) (NP (P sa) (N paliparan)))),tatlong oras bago ang paglipad. dumating kami sa paliparan,Three time/hour before [ang] [paglipad.] arrived we (excl.) to/at/in airport
+Makikiraan po.,makikiraan po.,"Make way, please.",True,(S (V makikiraan) (NP (N po.))),(S (V makikiraan) (NP (N po.))),(S (V makikiraan) (NP (N po.))),(S (V makikiraan) (NP (N po.))),makikiraan po.,Will pass by [po.]
+Gusto ng lahat ang kaligayahan.,gusto ng lahat ang kaligayahan.,Everybody desires happiness.,True,(S (V gusto) (NP (P ng) (N lahat)) (NP (DET ang) (N kaligayahan.))),(S (V gusto) (NP (P ng) (N lahat)) (NP (DET ang) (N kaligayahan.))),(S (V gusto) (NP (P ng) (N lahat)) (NP (DET ang) (N kaligayahan.))),(S (V gusto) (NP (P ng) (N lahat)) (NP (DET ang) (N kaligayahan.))),gusto ng lahat ang kaligayahan.,Like/want of everyone/all [ang] [kaligayahan.]
+Ang balita ko nagkasakit ka raw.,ang balita ko nagkasakit ka raw.,I've heard you've been sick.,True,"(S
+  (NP (DET ang) (N balita) (Pronoun ko))
+  (V nagkasakit)
+  (NP (NP (Pronoun ka)) (N raw.)))",(S  (NP (DET ang) (N balita) (Pronoun ko))  (V nagkasakit)  (NP (NP (Pronoun ka)) (N raw.))),"(S
+  (NP (DET ang) (N balita) (Pronoun ko))
+  (V nagkasakit)
+  (NP (NP (Pronoun ka)) (N raw.)))",(S  (NP (DET ang) (N balita) (Pronoun ko))  (V nagkasakit)  (NP (NP (Pronoun ka)) (N raw.))),ang balita ko nagkasakit ka raw.,[ang] news [ko] got sick you [raw.]
+Wala akong oras para kumuha ng iba pang estudyante.,wala akong oras para kumuha ng iba pang estudyante.,I don't have time to take any more pupils.,True,"(S
+  (V wala)
+  (NP (NP (Pronoun akong)) (N oras))
+  (PP (P para) (V kumuha))
+  (NP (NP (NP (P ng) (N iba)) (Particle pang)) (N estudyante.)))",(S  (V wala)  (NP (NP (Pronoun akong)) (N oras))  (PP (P para) (V kumuha))  (NP (NP (NP (P ng) (N iba)) (Particle pang)) (N estudyante.))),"(S
+  (V wala)
+  (NP (NP (Pronoun akong)) (N oras))
+  (PP (P para) (V kumuha))
+  (NP (NP (NP (P ng) (N iba)) (Particle pang)) (N estudyante.)))",(S  (V wala)  (NP (NP (Pronoun akong)) (N oras))  (PP (P para) (V kumuha))  (NP (NP (NP (P ng) (N iba)) (Particle pang)) (N estudyante.))),wala akong oras para kumuha ng iba pang estudyante.,None/don't have/lacking i time/hour for to get/take of [iba] [pang] [estudyante.]
+Maraming bata ang nananatili sa samahan kahit umulan.,maraming bata ang nananatili sa samahan kahit umulan.,Many children stay in the group even when it rains.,True,"(S
+  (Adj
+    (Adj (Adj maraming) (NP (N bata)))
+    (NP (DET ang) (V nananatili)))
+  (NP (NP (NP (P sa) (N samahan)) (Adv kahit)) (N umulan.)))",(S  (Adj   (Adj (Adj maraming) (NP (N bata)))   (NP (DET ang) (V nananatili)))  (NP (NP (NP (P sa) (N samahan)) (Adv kahit)) (N umulan.))),"(S
+  (Adj
+    (Adj (Adj maraming) (NP (N bata)))
+    (NP (DET ang) (V nananatili)))
+  (NP (NP (NP (P sa) (N samahan)) (Adv kahit)) (N umulan.)))",(S  (Adj   (Adj (Adj maraming) (NP (N bata)))   (NP (DET ang) (V nananatili)))  (NP (NP (NP (P sa) (N samahan)) (Adv kahit)) (N umulan.))),maraming bata ang nananatili sa samahan kahit umulan.,Many child [ang] staying to/at/in [samahan] even if/although [umulan.]
+Bumalik ka bago mag ika-10.,bumalik ka bago mag ika-10.,You must be back before ten.,True,"(S
+  (V bumalik)
+  (NP (Pronoun ka))
+  (PP (P bago) (NP (NP (N mag)) (N ika-10.))))",(S  (V bumalik)  (NP (Pronoun ka))  (PP (P bago) (NP (NP (N mag)) (N ika-10.)))),"(S
+  (V bumalik)
+  (NP (Pronoun ka))
+  (PP (P bago) (NP (NP (N mag)) (N ika-10.))))",(S  (V bumalik)  (NP (Pronoun ka))  (PP (P bago) (NP (NP (N mag)) (N ika-10.)))),bumalik ka bago mag ika-10.,Return you before [mag] [ika-10.]
+Wala akong kaligayahan kahit bumalik ka.,wala akong kaligayahan kahit bumalik ka.,nan,True,"(S
+  (V wala)
+  (NP (Pronoun akong))
+  (NP (NP (NP (NP (N kaligayahan)) (Adv kahit)) (V bumalik)) (N ka.)))",(S  (V wala)  (NP (Pronoun akong))  (NP (NP (NP (NP (N kaligayahan)) (Adv kahit)) (V bumalik)) (N ka.))),"(S
+  (V wala)
+  (NP (Pronoun akong))
+  (NP (NP (NP (NP (N kaligayahan)) (Adv kahit)) (V bumalik)) (N ka.)))",(S  (V wala)  (NP (Pronoun akong))  (NP (NP (NP (NP (N kaligayahan)) (Adv kahit)) (V bumalik)) (N ka.))),wala akong kaligayahan kahit bumalik ka.,None/don't have/lacking i happiness even if/although return [ka.]
+Hindi siya nakarating sa samahan kahapon.,hindi siya nakarating sa samahan kahapon.,nan,True,"(S
+  (NP (NP (Adv hindi) (NP (Pronoun siya))) (V nakarating))
+  (P sa)
+  (NP (NP (N samahan)) (N kahapon.)))",(S  (NP (NP (Adv hindi) (NP (Pronoun siya))) (V nakarating))  (P sa)  (NP (NP (N samahan)) (N kahapon.))),"(S
+  (NP (NP (Adv hindi) (NP (Pronoun siya))) (V nakarating))
+  (P sa)
+  (NP (NP (N samahan)) (N kahapon.)))",(S  (NP (NP (Adv hindi) (NP (Pronoun siya))) (V nakarating))  (P sa)  (NP (NP (N samahan)) (N kahapon.))),hindi siya nakarating sa samahan kahapon.,Not he/she arrived to/at/in [samahan] [kahapon.]
+"Hoy, iwasan mo yung tsismis ngayon.","hoy, iwasan mo yung tsismis ngayon.","Hey, avoid gossiping now.",True,"(S
+  (NP (N hoy,))
+  (VP
+    (V iwasan)
+    (Pronoun mo)
+    (NP (NP (DET yung) (N tsismis)) (N ngayon.))))","(S  (NP (N hoy,))  (VP   (V iwasan)   (Pronoun mo)   (NP (NP (DET yung) (N tsismis)) (N ngayon.))))","(S
+  (NP (N hoy,))
+  (VP
+    (V iwasan)
+    (Pronoun mo)
+    (NP (NP (DET yung) (N tsismis)) (N ngayon.))))","(S  (NP (N hoy,))  (VP   (V iwasan)   (Pronoun mo)   (NP (NP (DET yung) (N tsismis)) (N ngayon.))))","hoy, iwasan mo yung tsismis ngayon.","[hoy,] avoid you/your [yung] rumor [ngayon.]"
+Iwasan ng maraming bata ang samahan.,iwasan ng maraming bata ang samahan.,nan,True,"(S
+  (VP (VP (V iwasan)) (PP (P ng) (NP (Adj maraming) (N bata))))
+  (NP (DET ang) (N samahan.)))",(S  (VP (VP (V iwasan)) (PP (P ng) (NP (Adj maraming) (N bata))))  (NP (DET ang) (N samahan.))),"(S
+  (NP (DET ang) (N samahan.))
+  (VP (VP (V iwasan)) (PP (P ng) (NP (Adj maraming) (N bata)))))",(S  (NP (DET ang) (N samahan.))  (VP (VP (V iwasan)) (PP (P ng) (NP (Adj maraming) (N bata))))),ang samahan. iwasan ng maraming bata,[ang] [samahan.] avoid of many child
+Nabigyan siya ng pag-asa dahil doon.,nabigyan siya ng pag-asa dahil doon.,He took hope from that fact.,True,"(S
+  (V nabigyan)
+  (NP (Pronoun siya))
+  (PP (P ng) (NP (N pag-asa)) (CONJ dahil) (NP (N doon.))))",(S  (V nabigyan)  (NP (Pronoun siya))  (PP (P ng) (NP (N pag-asa)) (CONJ dahil) (NP (N doon.)))),"(S
+  (V nabigyan)
+  (NP (Pronoun siya))
+  (PP (P ng) (NP (N pag-asa)) (CONJ dahil) (NP (N doon.))))",(S  (V nabigyan)  (NP (Pronoun siya))  (PP (P ng) (NP (N pag-asa)) (CONJ dahil) (NP (N doon.)))),nabigyan siya ng pag-asa dahil doon.,Was given he/she of hope because [doon.]
+Kailangan ng pintura ng bahay mo.,kailangan ng pintura ng bahay mo.,Your house needs painting.,True,"(S
+  (VP
+    (VP (V kailangan))
+    (PP (P ng) (NP (N pintura) (P ng) (NP (NP (N bahay)) (N mo.))))))",(S  (VP   (VP (V kailangan))   (PP (P ng) (NP (N pintura) (P ng) (NP (NP (N bahay)) (N mo.)))))),"(S
+  (VP
+    (VP (V kailangan))
+    (PP (P ng) (NP (N pintura) (P ng) (NP (NP (N bahay)) (N mo.))))))",(S  (VP   (VP (V kailangan))   (PP (P ng) (NP (N pintura) (P ng) (NP (NP (N bahay)) (N mo.)))))),kailangan ng pintura ng bahay mo.,Need of paint of house [mo.]
+Kailangan mo ng oras para bumalik sa samahan.,kailangan mo ng oras para bumalik sa samahan.,nan,True,"(S
+  (V kailangan)
+  (NP (NP (Pronoun mo)) (PP (P ng) (N oras)))
+  (PP (P para) (V bumalik))
+  (NP (P sa) (N samahan.)))",(S  (V kailangan)  (NP (NP (Pronoun mo)) (PP (P ng) (N oras)))  (PP (P para) (V bumalik))  (NP (P sa) (N samahan.))),"(S
+  (V kailangan)
+  (NP (NP (Pronoun mo)) (PP (P ng) (N oras)))
+  (PP (P para) (V bumalik))
+  (NP (P sa) (N samahan.)))",(S  (V kailangan)  (NP (NP (Pronoun mo)) (PP (P ng) (N oras)))  (PP (P para) (V bumalik))  (NP (P sa) (N samahan.))),kailangan mo ng oras para bumalik sa samahan.,Need you/your of time/hour for return to/at/in [samahan.]
+"Bago umulan, bumalik ka sa samahan.","bago umulan, bumalik ka sa samahan.",nan,True,"(S
+  (P bago)
+  (N umulan,)
+  (VP (V bumalik) (Pronoun ka) (NP (P sa) (N samahan.))))","(S  (P bago)  (N umulan,)  (VP (V bumalik) (Pronoun ka) (NP (P sa) (N samahan.))))","(S
+  (P bago)
+  (N umulan,)
+  (VP (V bumalik) (Pronoun ka) (NP (P sa) (N samahan.))))","(S  (P bago)  (N umulan,)  (VP (V bumalik) (Pronoun ka) (NP (P sa) (N samahan.))))","bago umulan, bumalik ka sa samahan.","Before [umulan,] return you to/at/in [samahan.]"
+"Magsulat ng sanaysay tungkol sa ""Pagkakaibigan"".","magsulat ng sanaysay tungkol sa ""pagkakaibigan"".","Write an essay on ""Friendship"".",True,"(S
+  (VP
+    (VP (V magsulat))
+    (PP
+      (P ng)
+      (NP (N sanaysay) (P tungkol) (NP (P sa) (N ""pagkakaibigan"".))))))","(S  (VP   (VP (V magsulat))   (PP    (P ng)    (NP (N sanaysay) (P tungkol) (NP (P sa) (N ""pagkakaibigan"".))))))","(S
+  (VP
+    (VP (V magsulat))
+    (PP
+      (P ng)
+      (NP (N sanaysay) (P tungkol) (NP (P sa) (N ""pagkakaibigan"".))))))","(S  (VP   (VP (V magsulat))   (PP    (P ng)    (NP (N sanaysay) (P tungkol) (NP (P sa) (N ""pagkakaibigan"".))))))","magsulat ng sanaysay tungkol sa ""pagkakaibigan"".","To write of essay about to/at/in [""pagkakaibigan"".]"
+Maagang umalis ang barko.,maagang umalis ang barko.,The ship left ahead of time.,True,(S (Adv maagang) (VP (V umalis) (DET ang) (N barko.))),(S (Adv maagang) (VP (V umalis) (DET ang) (N barko.))),(S (Adv maagang) (VP (V umalis) (DET ang) (N barko.))),(S (Adv maagang) (VP (V umalis) (DET ang) (N barko.))),maagang umalis ang barko.,[maagang] left [ang] [barko.]
+Ano'ng pangalan ng pahina sa web mo?,ano'ng pangalan ng pahina sa web mo?,What's the name of your web page?,True,"(S
+  (NP (NP (NP (N ano'ng)) (N pangalan)) (PP (P ng) (N pahina)))
+  (P sa)
+  (NP (NP (N web)) (N mo?)))",(S  (NP (NP (NP (N ano'ng)) (N pangalan)) (PP (P ng) (N pahina)))  (P sa)  (NP (NP (N web)) (N mo?))),"(S
+  (NP (NP (NP (N ano'ng)) (N pangalan)) (PP (P ng) (N pahina)))
+  (P sa)
+  (NP (NP (N web)) (N mo?)))",(S  (NP (NP (NP (N ano'ng)) (N pangalan)) (PP (P ng) (N pahina)))  (P sa)  (NP (NP (N web)) (N mo?))),ano'ng pangalan ng pahina sa web mo?,[ano'ng] name of [pahina] to/at/in web [mo?]
+"Hoy, magsulat ka ng sanaysay tungkol sa barko.","hoy, magsulat ka ng sanaysay tungkol sa barko.",nan,True,"(S
+  (NP (NP (N hoy,)) (V magsulat))
+  (NP (Pronoun ka))
+  (PP (P ng) (NP (N sanaysay) (P tungkol) (NP (P sa) (N barko.)))))","(S  (NP (NP (N hoy,)) (V magsulat))  (NP (Pronoun ka))  (PP (P ng) (NP (N sanaysay) (P tungkol) (NP (P sa) (N barko.)))))","(S
+  (NP (NP (N hoy,)) (V magsulat))
+  (NP (Pronoun ka))
+  (PP (P ng) (NP (N sanaysay) (P tungkol) (NP (P sa) (N barko.)))))","(S  (NP (NP (N hoy,)) (V magsulat))  (NP (Pronoun ka))  (PP (P ng) (NP (N sanaysay) (P tungkol) (NP (P sa) (N barko.)))))","hoy, magsulat ka ng sanaysay tungkol sa barko.","[hoy,] to write you of essay about to/at/in [barko.]"
+Pakiramdam ko’y nananatili siya sa paaralan.,pakiramdam ko’y nananatili siya sa paaralan.,I feel like he's staying at school.,True,"(S
+  (NP (NP (N pakiramdam)) (N ko’y))
+  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.))))",(S  (NP (NP (N pakiramdam)) (N ko’y))  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.)))),"(S
+  (NP (NP (N pakiramdam)) (N ko’y))
+  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.))))",(S  (NP (NP (N pakiramdam)) (N ko’y))  (VP (V nananatili) (Pronoun siya) (NP (P sa) (N paaralan.)))),pakiramdam ko’y nananatili siya sa paaralan.,Feeling [ko’y] staying he/she to/at/in [paaralan.]
+30 taon na siyang nagtatrabaho para sa kapakanan ng kanyang taong-bayan.,30 taon na siyang nagtatrabaho para sa kapakanan ng kanyang taong-bayan.,He has worked for the welfare of his people for 30 years.,True,"(S
+  (NP
+    (NP
+      (NP (Number 30) (N taon))
+      (Particle na)
+      (NP (Pronoun siyang)))
+    (V nagtatrabaho))
+  (P para)
+  (NP
+    (NP (NP (P sa) (N kapakanan)) (PP (P ng) (NP (Pronoun kanyang))))
+    (N taong-bayan.)))",(S  (NP   (NP    (NP (Number 30) (N taon))    (Particle na)    (NP (Pronoun siyang)))   (V nagtatrabaho))  (P para)  (NP   (NP (NP (P sa) (N kapakanan)) (PP (P ng) (NP (Pronoun kanyang))))   (N taong-bayan.))),"(S
+  (NP
+    (NP
+      (NP (Number 30) (N taon))
+      (Particle na)
+      (NP (Pronoun siyang)))
+    (V nagtatrabaho))
+  (P para)
+  (NP
+    (NP (NP (P sa) (N kapakanan)) (PP (P ng) (NP (Pronoun kanyang))))
+    (N taong-bayan.)))",(S  (NP   (NP    (NP (Number 30) (N taon))    (Particle na)    (NP (Pronoun siyang)))   (V nagtatrabaho))  (P para)  (NP   (NP (NP (P sa) (N kapakanan)) (PP (P ng) (NP (Pronoun kanyang))))   (N taong-bayan.))),30 taon na siyang nagtatrabaho para sa kapakanan ng kanyang taong-bayan.,30 year now/already he/she working for to/at/in welfare of his/her [taong-bayan.]
+"Bumili ako ng kamera, pero nawala ko sa sumunod na araw.","bumili ako ng kamera, pero nawala ko sa sumunod na araw.","I bought a camera, but I lost it the next day.",True,"(S
+  (V bumili)
+  (NP (NP (Pronoun ako)) (PP (P ng) (N kamera,)))
+  (CONJ pero)
+  (V nawala)
+  (NP
+    (NP (NP (NP (Pronoun ko)) (PP (P sa) (V sumunod))) (Adv na))
+    (N araw.)))","(S  (V bumili)  (NP (NP (Pronoun ako)) (PP (P ng) (N kamera,)))  (CONJ pero)  (V nawala)  (NP   (NP (NP (NP (Pronoun ko)) (PP (P sa) (V sumunod))) (Adv na))   (N araw.)))","(S
+  (V bumili)
+  (NP (NP (Pronoun ako)) (PP (P ng) (N kamera,)))
+  (CONJ pero)
+  (V nawala)
+  (NP
+    (NP (NP (NP (Pronoun ko)) (PP (P sa) (V sumunod))) (Adv na))
+    (N araw.)))","(S  (V bumili)  (NP (NP (Pronoun ako)) (PP (P ng) (N kamera,)))  (CONJ pero)  (V nawala)  (NP   (NP (NP (NP (Pronoun ko)) (PP (P sa) (V sumunod))) (Adv na))   (N araw.)))","bumili ako ng kamera, pero nawala ko sa sumunod na araw.","Bought i of [kamera,] but lost/disappeared [ko] to/at/in followed now/already [araw.]"
+Bumalik ako ng sanaysay sa paaralan.,bumalik ako ng sanaysay sa paaralan.,nan,True,"(S
+  (VP (V bumalik) (Pronoun ako) (NP (P ng) (N sanaysay)))
+  (NP (P sa) (N paaralan.)))",(S  (VP (V bumalik) (Pronoun ako) (NP (P ng) (N sanaysay)))  (NP (P sa) (N paaralan.))),"(S
+  (NP (P sa) (N paaralan.))
+  (VP (V bumalik) (Pronoun ako) (NP (P ng) (N sanaysay))))",(S  (NP (P sa) (N paaralan.))  (VP (V bumalik) (Pronoun ako) (NP (P ng) (N sanaysay)))),sa paaralan. bumalik ako ng sanaysay,To/at/in [paaralan.] return i of essay
+Huwag mo kalimutang magdala ng payong.,huwag mo kalimutang magdala ng payong.,Don't forget to take an umbrella with you.,True,"(S
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala))
+  (NP (P ng) (N payong.)))",(S  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala))  (NP (P ng) (N payong.))),"(S
+  (NP (P ng) (N payong.))
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala)))",(S  (NP (P ng) (N payong.))  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala))),ng payong. huwag mo kalimutang magdala,Of [payong.] don't you/your forget to bring
+"Hoy, huwag mo kalimutang magsulat ng sanaysay.","hoy, huwag mo kalimutang magsulat ng sanaysay.",nan,True,"(S
+  (NP (NP (N hoy,)) (V huwag))
+  (NP (NP (NP (Pronoun mo)) (V kalimutang)) (V magsulat))
+  (PP (P ng) (N sanaysay.)))","(S  (NP (NP (N hoy,)) (V huwag))  (NP (NP (NP (Pronoun mo)) (V kalimutang)) (V magsulat))  (PP (P ng) (N sanaysay.)))","(S
+  (NP (NP (N hoy,)) (V huwag))
+  (NP (NP (NP (Pronoun mo)) (V kalimutang)) (V magsulat))
+  (PP (P ng) (N sanaysay.)))","(S  (NP (NP (N hoy,)) (V huwag))  (NP (NP (NP (Pronoun mo)) (V kalimutang)) (V magsulat))  (PP (P ng) (N sanaysay.)))","hoy, huwag mo kalimutang magsulat ng sanaysay.","[hoy,] don't you/your forget to write of [sanaysay.]"
+Atin-atin lang ito.,atin-atin lang ito.,This is just among ourselves.,True,(S (NP (NP (Pronoun atin-atin)) (Adv lang)) (NP (N ito.))),(S (NP (NP (Pronoun atin-atin)) (Adv lang)) (NP (N ito.))),(S (NP (NP (Pronoun atin-atin)) (Adv lang)) (NP (N ito.))),(S (NP (NP (Pronoun atin-atin)) (Adv lang)) (NP (N ito.))),atin-atin lang ito.,Among ourselves only/just [ito.]
+Ang putla niya. Baka may sakit siya.,ang putla niya. baka may sakit siya.,She looks pale. She may have been Ill.,True,"(S
+  (NP (DET ang) (Adj (Adj putla) (NP (N niya.))) (N baka))
+  (V may)
+  (NP (NP (N sakit)) (N siya.)))",(S  (NP (DET ang) (Adj (Adj putla) (NP (N niya.))) (N baka))  (V may)  (NP (NP (N sakit)) (N siya.))),"(S
+  (NP (DET ang) (Adj (Adj putla) (NP (N niya.))) (N baka))
+  (V may)
+  (NP (NP (N sakit)) (N siya.)))",(S  (NP (DET ang) (Adj (Adj putla) (NP (N niya.))) (N baka))  (V may)  (NP (NP (N sakit)) (N siya.))),ang putla niya. baka may sakit siya.,[ang] pale [niya.] [baka] have/has/there is [sakit] [siya.]
+Natapos mo na bang basahin ang dyaryo ngayong araw?,natapos mo na bang basahin ang dyaryo ngayong araw?,Have you finished reading today's paper yet?,True,"(S
+  (VP
+    (V natapos)
+    (NP (NP (NP (Pronoun mo)) (Adv na)) (Particle bang))
+    (V basahin))
+  (NP (NP (NP (DET ang) (N dyaryo)) (Adv ngayong)) (N araw?)))",(S  (VP   (V natapos)   (NP (NP (NP (Pronoun mo)) (Adv na)) (Particle bang))   (V basahin))  (NP (NP (NP (DET ang) (N dyaryo)) (Adv ngayong)) (N araw?))),"(S
+  (NP (NP (NP (DET ang) (N dyaryo)) (Adv ngayong)) (N araw?))
+  (VP
+    (V natapos)
+    (NP (NP (NP (Pronoun mo)) (Adv na)) (Particle bang))
+    (V basahin)))",(S  (NP (NP (NP (DET ang) (N dyaryo)) (Adv ngayong)) (N araw?))  (VP   (V natapos)   (NP (NP (NP (Pronoun mo)) (Adv na)) (Particle bang))   (V basahin))),ang dyaryo ngayong araw? natapos mo na bang basahin,[ang] newspaper this [araw?] finished you/your now/already [bang] read
+Huwag mo kalimutang basahin ang sanaysay ngayong araw.,huwag mo kalimutang basahin ang sanaysay ngayong araw.,nan,True,"(S
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V basahin))
+  (NP (NP (NP (DET ang) (N sanaysay)) (Adv ngayong)) (N araw.)))",(S  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V basahin))  (NP (NP (NP (DET ang) (N sanaysay)) (Adv ngayong)) (N araw.))),"(S
+  (NP (NP (NP (DET ang) (N sanaysay)) (Adv ngayong)) (N araw.))
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V basahin)))",(S  (NP (NP (NP (DET ang) (N sanaysay)) (Adv ngayong)) (N araw.))  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V basahin))),ang sanaysay ngayong araw. huwag mo kalimutang basahin,[ang] essay this [araw.] don't you/your forget read
+Mas mainit-init na.,mas mainit-init na.,It has become much warmer.,True,(S (Adj (Adv mas) (Adj mainit-init)) (NP (N na.))),(S (Adj (Adv mas) (Adj mainit-init)) (NP (N na.))),(S (Adj (Adv mas) (Adj mainit-init)) (NP (N na.))),(S (Adj (Adv mas) (Adj mainit-init)) (NP (N na.))),mas mainit-init na.,More warmer [na.]
+"Ang sabi niya, ""Ayaw kong gumawa ng palusot, kaya wala na akong sasabihin pa.""","ang sabi niya, ""ayaw kong gumawa ng palusot, kaya wala na akong sasabihin pa.""","He said, ""I will say nothing more, because I hate making excuses.""",True,"(S
+  (NP (NP (NP (DET ang) (N sabi)) (N niya,)) (N ""ayaw))
+  (NP (NP (Pronoun kong)) (N gumawa))
+  (PP
+    (P ng)
+    (NP (N palusot,))
+    (CONJ kaya)
+    (NP
+      (Adj (Adj (Adj wala) (Particle na)) (NP (Pronoun akong)))
+      (NP (NP (N sasabihin)) (N pa."")))))","(S  (NP (NP (NP (DET ang) (N sabi)) (N niya,)) (N ""ayaw))  (NP (NP (Pronoun kong)) (N gumawa))  (PP   (P ng)   (NP (N palusot,))   (CONJ kaya)   (NP    (Adj (Adj (Adj wala) (Particle na)) (NP (Pronoun akong)))    (NP (NP (N sasabihin)) (N pa."")))))","(S
+  (NP (NP (NP (DET ang) (N sabi)) (N niya,)) (N ""ayaw))
+  (NP (NP (Pronoun kong)) (N gumawa))
+  (PP
+    (P ng)
+    (NP (N palusot,))
+    (CONJ kaya)
+    (NP
+      (Adj (Adj (Adj wala) (Particle na)) (NP (Pronoun akong)))
+      (NP (NP (N sasabihin)) (N pa."")))))","(S  (NP (NP (NP (DET ang) (N sabi)) (N niya,)) (N ""ayaw))  (NP (NP (Pronoun kong)) (N gumawa))  (PP   (P ng)   (NP (N palusot,))   (CONJ kaya)   (NP    (Adj (Adj (Adj wala) (Particle na)) (NP (Pronoun akong)))    (NP (NP (N sasabihin)) (N pa."")))))","ang sabi niya, ""ayaw kong gumawa ng palusot, kaya wala na akong sasabihin pa.""","[ang] [sabi] [niya,] [""ayaw] my [gumawa] of [palusot,] so/maybe/can none/don't have/lacking now/already i [sasabihin] [pa.""]"
+Pakibagalan niyo po ang inyong pagsasalita.,pakibagalan niyo po ang inyong pagsasalita.,"Speak more slowly, please!",True,"(S
+  (NP (N pakibagalan))
+  (NP
+    (NP (NP (Pronoun niyo)) (Particle po) (NP (DET ang) (N inyong)))
+    (N pagsasalita.)))",(S  (NP (N pakibagalan))  (NP   (NP (NP (Pronoun niyo)) (Particle po) (NP (DET ang) (N inyong)))   (N pagsasalita.))),"(S
+  (NP (N pakibagalan))
+  (NP
+    (NP (NP (Pronoun niyo)) (Particle po) (NP (DET ang) (N inyong)))
+    (N pagsasalita.)))",(S  (NP (N pakibagalan))  (NP   (NP (NP (Pronoun niyo)) (Particle po) (NP (DET ang) (N inyong)))   (N pagsasalita.))),pakibagalan niyo po ang inyong pagsasalita.,[pakibagalan] you(pl)/your(pl) [po] [ang] [inyong] [pagsasalita.]
+Sa tingin ko OK lang.,sa tingin ko ok lang.,I think it's OK.,True,"(S
+  (NP (P sa) (N tingin))
+  (NP (NP (NP (Pronoun ko)) (N ok)) (N lang.)))",(S  (NP (P sa) (N tingin))  (NP (NP (NP (Pronoun ko)) (N ok)) (N lang.))),"(S
+  (NP (P sa) (N tingin))
+  (NP (NP (NP (Pronoun ko)) (N ok)) (N lang.)))",(S  (NP (P sa) (N tingin))  (NP (NP (NP (Pronoun ko)) (N ok)) (N lang.))),sa tingin ko ok lang.,To/at/in opinion/look [ko] [ok] [lang.]
+Ipinakilala niya sa akin ang anak niyang babae.,ipinakilala niya sa akin ang anak niyang babae.,He introduced his daughter to me.,True,"(S
+  (NP
+    (NP (N ipinakilala) (Pronoun niya))
+    (PP (P sa) (NP (Pronoun akin))))
+  (NP (NP (DET ang) (N anak) (Pronoun niyang)) (N babae.)))",(S  (NP   (NP (N ipinakilala) (Pronoun niya))   (PP (P sa) (NP (Pronoun akin))))  (NP (NP (DET ang) (N anak) (Pronoun niyang)) (N babae.))),"(S
+  (NP
+    (NP (N ipinakilala) (Pronoun niya))
+    (PP (P sa) (NP (Pronoun akin))))
+  (NP (NP (DET ang) (N anak) (Pronoun niyang)) (N babae.)))",(S  (NP   (NP (N ipinakilala) (Pronoun niya))   (PP (P sa) (NP (Pronoun akin))))  (NP (NP (DET ang) (N anak) (Pronoun niyang)) (N babae.))),ipinakilala niya sa akin ang anak niyang babae.,[ipinakilala] his/her to/at/in my/mine [ang] child/son/daughter his/her [babae.]
+Maraming batang lalaki ang pumunta sa digmaan.,maraming batang lalaki ang pumunta sa digmaan.,Many young men went to war.,True,"(S
+  (Adj
+    (Adj (Adj maraming) (NP (NP (N batang)) (N lalaki)))
+    (NP (DET ang) (V pumunta)))
+  (NP (P sa) (N digmaan.)))",(S  (Adj   (Adj (Adj maraming) (NP (NP (N batang)) (N lalaki)))   (NP (DET ang) (V pumunta)))  (NP (P sa) (N digmaan.))),"(S
+  (Adj
+    (Adj (Adj maraming) (NP (NP (N batang)) (N lalaki)))
+    (NP (DET ang) (V pumunta)))
+  (NP (P sa) (N digmaan.)))",(S  (Adj   (Adj (Adj maraming) (NP (NP (N batang)) (N lalaki)))   (NP (DET ang) (V pumunta)))  (NP (P sa) (N digmaan.))),maraming batang lalaki ang pumunta sa digmaan.,Many [batang] man/male [ang] went to/at/in [digmaan.]
+Huwag mo kalimutang pumunta sa paaralan.,huwag mo kalimutang pumunta sa paaralan.,nan,True,"(S
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V pumunta))
+  (NP (P sa) (N paaralan.)))",(S  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V pumunta))  (NP (P sa) (N paaralan.))),"(S
+  (NP (P sa) (N paaralan.))
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V pumunta)))",(S  (NP (P sa) (N paaralan.))  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V pumunta))),sa paaralan. huwag mo kalimutang pumunta,To/at/in [paaralan.] don't you/your forget went
+Maraming uri ng kape.,maraming uri ng kape.,There are various kinds of coffee.,True,(S (NP (Adj maraming) (N uri)) (NP (P ng) (N kape.))),(S (NP (Adj maraming) (N uri)) (NP (P ng) (N kape.))),(S (NP (Adj maraming) (N uri)) (NP (P ng) (N kape.))),(S (NP (Adj maraming) (N uri)) (NP (P ng) (N kape.))),maraming uri ng kape.,Many type/kind of [kape.]
+Maraming kaakit-akit na hayop sa Australia.,maraming kaakit-akit na hayop sa australia.,There are many interesting animals in Australia.,True,"(S
+  (Adj
+    (Adj maraming)
+    (NP (Adj (Adj kaakit-akit) (Particle na)) (N hayop)))
+  (NP (P sa) (N australia.)))",(S  (Adj   (Adj maraming)   (NP (Adj (Adj kaakit-akit) (Particle na)) (N hayop)))  (NP (P sa) (N australia.))),"(S
+  (Adj
+    (Adj maraming)
+    (NP (Adj (Adj kaakit-akit) (Particle na)) (N hayop)))
+  (NP (P sa) (N australia.)))",(S  (Adj   (Adj maraming)   (NP (Adj (Adj kaakit-akit) (Particle na)) (N hayop)))  (NP (P sa) (N australia.))),maraming kaakit-akit na hayop sa australia.,Many interesting now/already animal to/at/in [australia.]
+Magpapalaki ako ng maraming puno rito.,magpapalaki ako ng maraming puno rito.,I will grow many trees here.,True,"(S
+  (V magpapalaki)
+  (NP (Pronoun ako))
+  (PP (P ng) (NP (Adj (Adj maraming) (NP (N puno))) (N rito.))))",(S  (V magpapalaki)  (NP (Pronoun ako))  (PP (P ng) (NP (Adj (Adj maraming) (NP (N puno))) (N rito.)))),"(S
+  (V magpapalaki)
+  (NP (Pronoun ako))
+  (PP (P ng) (NP (Adj (Adj maraming) (NP (N puno))) (N rito.))))",(S  (V magpapalaki)  (NP (Pronoun ako))  (PP (P ng) (NP (Adj (Adj maraming) (NP (N puno))) (N rito.)))),magpapalaki ako ng maraming puno rito.,Will grow i of many tree/full [rito.]
+Wala akong tiwala sa kanya.,wala akong tiwala sa kanya.,"As for me, I don't trust him at all.",True,"(S
+  (NP (NP (Adj wala) (NP (Pronoun akong))) (N tiwala))
+  (NP (P sa) (N kanya.)))",(S  (NP (NP (Adj wala) (NP (Pronoun akong))) (N tiwala))  (NP (P sa) (N kanya.))),"(S
+  (NP (NP (Adj wala) (NP (Pronoun akong))) (N tiwala))
+  (NP (P sa) (N kanya.)))",(S  (NP (NP (Adj wala) (NP (Pronoun akong))) (N tiwala))  (NP (P sa) (N kanya.))),wala akong tiwala sa kanya.,None/don't have/lacking i trust to/at/in [kanya.]
+Nakuha mo ba?,nakuha mo ba?,Got the hang of it?,True,(S (V nakuha) (NP (NP (Pronoun mo)) (N ba?))),(S (V nakuha) (NP (NP (Pronoun mo)) (N ba?))),(S (V nakuha) (NP (NP (Pronoun mo)) (N ba?))),(S (V nakuha) (NP (NP (Pronoun mo)) (N ba?))),nakuha mo ba?,Got you/your [ba?]
+Mukhang nabigo siya sa kanyang anak.,mukhang nabigo siya sa kanyang anak.,He seems disappointed in his son.,True,"(S
+  (Adj mukhang)
+  (VP (V nabigo))
+  (NP
+    (NP (NP (Pronoun siya)) (PP (P sa) (NP (Pronoun kanyang))))
+    (N anak.)))",(S  (Adj mukhang)  (VP (V nabigo))  (NP   (NP (NP (Pronoun siya)) (PP (P sa) (NP (Pronoun kanyang))))   (N anak.))),"(S
+  (Adj mukhang)
+  (VP (V nabigo))
+  (NP
+    (NP (NP (Pronoun siya)) (PP (P sa) (NP (Pronoun kanyang))))
+    (N anak.)))",(S  (Adj mukhang)  (VP (V nabigo))  (NP   (NP (NP (Pronoun siya)) (PP (P sa) (NP (Pronoun kanyang))))   (N anak.))),mukhang nabigo siya sa kanyang anak.,Looks/seems failed/disappointed he/she to/at/in his/her [anak.]
+Talunin natin ang Hapon!,talunin natin ang hapon!,Let's beat Japan!,True,(S (V talunin) (NP (Pronoun natin)) (NP (DET ang) (N hapon!))),(S (V talunin) (NP (Pronoun natin)) (NP (DET ang) (N hapon!))),(S (V talunin) (NP (Pronoun natin)) (NP (DET ang) (N hapon!))),(S (V talunin) (NP (Pronoun natin)) (NP (DET ang) (N hapon!))),talunin natin ang hapon!,Defeat/beat our (incl.) [ang] [hapon!]
+Lagi na lang siyang humihiram ng pera sa akin.,lagi na lang siyang humihiram ng pera sa akin.,He was constantly borrowing money from me.,True,"(S
+  (NP
+    (NP (NP (N lagi)) (Adv na))
+    (Particle lang)
+    (NP
+      (NP (NP (Pronoun siyang)) (V humihiram))
+      (PP (P ng) (N pera))))
+  (NP (P sa) (N akin.)))",(S  (NP   (NP (NP (N lagi)) (Adv na))   (Particle lang)   (NP    (NP (NP (Pronoun siyang)) (V humihiram))    (PP (P ng) (N pera))))  (NP (P sa) (N akin.))),"(S
+  (NP
+    (NP (NP (N lagi)) (Adv na))
+    (Particle lang)
+    (NP
+      (NP (NP (Pronoun siyang)) (V humihiram))
+      (PP (P ng) (N pera))))
+  (NP (P sa) (N akin.)))",(S  (NP   (NP (NP (N lagi)) (Adv na))   (Particle lang)   (NP    (NP (NP (Pronoun siyang)) (V humihiram))    (PP (P ng) (N pera))))  (NP (P sa) (N akin.))),lagi na lang siyang humihiram ng pera sa akin.,[lagi] now/already only/just he/she borrowing of money to/at/in [akin.]
+Itong-ito ang hinahanap niya.,itong-ito ang hinahanap niya.,He was looking for this very thing.,True,(S (NP (N itong-ito)) (NP (NP (DET ang) (V hinahanap)) (N niya.))),(S (NP (N itong-ito)) (NP (NP (DET ang) (V hinahanap)) (N niya.))),(S (NP (N itong-ito)) (NP (NP (DET ang) (V hinahanap)) (N niya.))),(S (NP (N itong-ito)) (NP (NP (DET ang) (V hinahanap)) (N niya.))),itong-ito ang hinahanap niya.,[itong-ito] [ang] looking for [niya.]
+Mahilig magbasa ang lolo ko.,mahilig magbasa ang lolo ko.,My grandfather is very fond of reading.,True,(S (VP (V mahilig) (V magbasa)) (NP (NP (DET ang) (N lolo)) (N ko.))),(S (VP (V mahilig) (V magbasa)) (NP (NP (DET ang) (N lolo)) (N ko.))),(S (NP (NP (DET ang) (N lolo)) (N ko.)) (VP (V mahilig) (V magbasa))),(S (NP (NP (DET ang) (N lolo)) (N ko.)) (VP (V mahilig) (V magbasa))),ang lolo ko. mahilig magbasa,[ang] grandfather [ko.] fond of reading
+Mahiyain siya noong hayskul pa lang siya.,mahiyain siya noong hayskul pa lang siya.,She was shy in her high school days.,True,"(S
+  (V mahiyain)
+  (NP (Pronoun siya))
+  (NP
+    (NP (Adv noong) (NP (NP (NP (N hayskul)) (Adv pa)) (Adv lang)))
+    (N siya.)))",(S  (V mahiyain)  (NP (Pronoun siya))  (NP   (NP (Adv noong) (NP (NP (NP (N hayskul)) (Adv pa)) (Adv lang)))   (N siya.))),"(S
+  (V mahiyain)
+  (NP (Pronoun siya))
+  (NP
+    (NP (Adv noong) (NP (NP (NP (N hayskul)) (Adv pa)) (Adv lang)))
+    (N siya.)))",(S  (V mahiyain)  (NP (Pronoun siya))  (NP   (NP (Adv noong) (NP (NP (NP (N hayskul)) (Adv pa)) (Adv lang)))   (N siya.))),mahiyain siya noong hayskul pa lang siya.,Shy he/she then (past) [hayskul] yet/still only/just [siya.]
+Magsisimula ako pagdating niya.,magsisimula ako pagdating niya.,I will start after he comes.,True,"(S
+  (V magsisimula)
+  (NP (Pronoun ako))
+  (NP (NP (N pagdating)) (N niya.)))",(S  (V magsisimula)  (NP (Pronoun ako))  (NP (NP (N pagdating)) (N niya.))),"(S
+  (V magsisimula)
+  (NP (Pronoun ako))
+  (NP (NP (N pagdating)) (N niya.)))",(S  (V magsisimula)  (NP (Pronoun ako))  (NP (NP (N pagdating)) (N niya.))),magsisimula ako pagdating niya.,Will start i [pagdating] [niya.]
+Mahina siya sa sipnayan.,mahina siya sa sipnayan.,Mathematics is her weak point.,True,(S (V mahina) (NP (Pronoun siya)) (NP (P sa) (N sipnayan.))),(S (V mahina) (NP (Pronoun siya)) (NP (P sa) (N sipnayan.))),(S (V mahina) (NP (Pronoun siya)) (NP (P sa) (N sipnayan.))),(S (V mahina) (NP (Pronoun siya)) (NP (P sa) (N sipnayan.))),mahina siya sa sipnayan.,Weak he/she to/at/in [sipnayan.]
+Lalabas ang katotohanan.,lalabas ang katotohanan.,The truth will come out one day.,True,(S (VP (V lalabas) (DET ang) (N katotohanan.))),(S (VP (V lalabas) (DET ang) (N katotohanan.))),(S (VP (V lalabas) (DET ang) (N katotohanan.))),(S (VP (V lalabas) (DET ang) (N katotohanan.))),lalabas ang katotohanan.,Will come out [ang] [katotohanan.]
+Maglalayag ang eroplano sa ika-5.,maglalayag ang eroplano sa ika-5.,That plane will take off at five.,True,(S (VP (V maglalayag) (DET ang) (N eroplano)) (NP (P sa) (N ika-5.))),(S (VP (V maglalayag) (DET ang) (N eroplano)) (NP (P sa) (N ika-5.))),(S (NP (P sa) (N ika-5.)) (VP (V maglalayag) (DET ang) (N eroplano))),(S (NP (P sa) (N ika-5.)) (VP (V maglalayag) (DET ang) (N eroplano))),sa ika-5. maglalayag ang eroplano,To/at/in [ika-5.] will sail/take off [ang] airplane
+Sinunog ang aso hanggang mamatay ito.,sinunog ang aso hanggang mamatay ito.,The dog was burnt to death.,True,"(S
+  (V sinunog)
+  (NP
+    (NP (NP (DET ang) (N aso)) (PP (P hanggang) (V mamatay)))
+    (N ito.)))",(S  (V sinunog)  (NP   (NP (NP (DET ang) (N aso)) (PP (P hanggang) (V mamatay)))   (N ito.))),"(S
+  (V sinunog)
+  (NP
+    (NP (NP (DET ang) (N aso)) (PP (P hanggang) (V mamatay)))
+    (N ito.)))",(S  (V sinunog)  (NP   (NP (NP (DET ang) (N aso)) (PP (P hanggang) (V mamatay)))   (N ito.))),sinunog ang aso hanggang mamatay ito.,Burned [ang] dog until/up to die [ito.]
+Hindi ko alam na galing pala sa binhi ang puno ng mansanas.,hindi ko alam na galing pala sa binhi ang puno ng mansanas.,I didn't know apple trees grow from seeds.,True,"(S
+  (NP
+    (Adv hindi)
+    (NP
+      (NP (NP (NP (NP (Pronoun ko)) (V alam)) (Adv na)) (V galing))
+      (Particle pala)
+      (NP (P sa) (N binhi))))
+  (NP (DET ang) (N puno))
+  (PP (P ng) (N mansanas.)))",(S  (NP   (Adv hindi)   (NP    (NP (NP (NP (NP (Pronoun ko)) (V alam)) (Adv na)) (V galing))    (Particle pala)    (NP (P sa) (N binhi))))  (NP (DET ang) (N puno))  (PP (P ng) (N mansanas.))),"(S
+  (NP
+    (Adv hindi)
+    (NP
+      (NP (NP (NP (NP (Pronoun ko)) (V alam)) (Adv na)) (V galing))
+      (Particle pala)
+      (NP (P sa) (N binhi))))
+  (NP (DET ang) (N puno))
+  (PP (P ng) (N mansanas.)))",(S  (NP   (Adv hindi)   (NP    (NP (NP (NP (NP (Pronoun ko)) (V alam)) (Adv na)) (V galing))    (Particle pala)    (NP (P sa) (N binhi))))  (NP (DET ang) (N puno))  (PP (P ng) (N mansanas.))),hindi ko alam na galing pala sa binhi ang puno ng mansanas.,Not [ko] know now/already from (particle indicating realization) to/at/in seed [ang] tree/full of [mansanas.]
+Hindi ka makakaasa sa kanya.,hindi ka makakaasa sa kanya.,He can be relied on.,True,"(S
+  (NP (Adv hindi) (NP (Pronoun ka)))
+  (V makakaasa)
+  (NP (P sa) (N kanya.)))",(S  (NP (Adv hindi) (NP (Pronoun ka)))  (V makakaasa)  (NP (P sa) (N kanya.))),"(S
+  (NP (Adv hindi) (NP (Pronoun ka)))
+  (V makakaasa)
+  (NP (P sa) (N kanya.)))",(S  (NP (Adv hindi) (NP (Pronoun ka)))  (V makakaasa)  (NP (P sa) (N kanya.))),hindi ka makakaasa sa kanya.,Not you can expect/rely to/at/in [kanya.]
+Sinuwerte siya at nanalo sa lotto.,sinuwerte siya at nanalo sa lotto.,She beat the odds and won the lottery.,True,"(S
+  (V sinuwerte)
+  (NP (NP (Pronoun siya)) (CONJ at) (NP (N nanalo)))
+  (NP (P sa) (N lotto.)))",(S  (V sinuwerte)  (NP (NP (Pronoun siya)) (CONJ at) (NP (N nanalo)))  (NP (P sa) (N lotto.))),"(S
+  (V sinuwerte)
+  (NP (NP (Pronoun siya)) (CONJ at) (NP (N nanalo)))
+  (NP (P sa) (N lotto.)))",(S  (V sinuwerte)  (NP (NP (Pronoun siya)) (CONJ at) (NP (N nanalo)))  (NP (P sa) (N lotto.))),sinuwerte siya at nanalo sa lotto.,Got lucky he/she and [nanalo] to/at/in [lotto.]
+Nakita ko 'yong taong pumasok sa silid.,nakita ko 'yong taong pumasok sa silid.,I saw the man enter the room.,True,"(S
+  (VP
+    (V nakita)
+    (NP (NP (NP (Pronoun ko)) (N 'yong)) (N taong))
+    (V pumasok))
+  (NP (P sa) (N silid.)))",(S  (VP   (V nakita)   (NP (NP (NP (Pronoun ko)) (N 'yong)) (N taong))   (V pumasok))  (NP (P sa) (N silid.))),"(S
+  (NP (P sa) (N silid.))
+  (VP
+    (V nakita)
+    (NP (NP (NP (Pronoun ko)) (N 'yong)) (N taong))
+    (V pumasok)))",(S  (NP (P sa) (N silid.))  (VP   (V nakita)   (NP (NP (NP (Pronoun ko)) (N 'yong)) (N taong))   (V pumasok))),sa silid. nakita ko 'yong taong pumasok,To/at/in [silid.] saw [ko] ['yong] person entered/went
+May asong biglang dumamba sa akin.,may asong biglang dumamba sa akin.,A dog suddenly jumped at me.,True,"(S
+  (VP (V may) (NP (NP (N asong)) (Adv biglang)) (V dumamba))
+  (NP (P sa) (N akin.)))",(S  (VP (V may) (NP (NP (N asong)) (Adv biglang)) (V dumamba))  (NP (P sa) (N akin.))),"(S
+  (NP (P sa) (N akin.))
+  (VP (V may) (NP (NP (N asong)) (Adv biglang)) (V dumamba)))",(S  (NP (P sa) (N akin.))  (VP (V may) (NP (NP (N asong)) (Adv biglang)) (V dumamba))),sa akin. may asong biglang dumamba,To/at/in [akin.] have/has/there is dog suddenly jumped
+Sino'ng darating?,sino'ng darating?,Who is coming?,True,(S (Interrogative sino'ng) (N darating?)),(S (Interrogative sino'ng) (N darating?)),(S (Interrogative sino'ng) (N darating?)),(S (Interrogative sino'ng) (N darating?)),sino'ng darating?,Who is [darating?]
+Magaling na atleta si Ken.,magaling na atleta si ken.,Ken is quite an athlete.,True,(S (V magaling) (NP (Adv na) (NP (N atleta))) (NP (DET si) (N ken.))),(S (V magaling) (NP (Adv na) (NP (N atleta))) (NP (DET si) (N ken.))),(S (V magaling) (NP (Adv na) (NP (N atleta))) (NP (DET si) (N ken.))),(S (V magaling) (NP (Adv na) (NP (N atleta))) (NP (DET si) (N ken.))),magaling na atleta si ken.,Good/skillful now/already athlete [si] [ken.]
+Nakita ko ang asong dumamba sa silid.,nakita ko ang asong dumamba sa silid.,I saw the dog jump into the room.,True,"(S
+  (VP
+    (V nakita)
+    (Pronoun ko)
+    (NP (NP (DET ang) (N asong)) (V dumamba)))
+  (NP (P sa) (N silid.)))",(S  (VP   (V nakita)   (Pronoun ko)   (NP (NP (DET ang) (N asong)) (V dumamba)))  (NP (P sa) (N silid.))),"(S
+  (NP (P sa) (N silid.))
+  (VP
+    (V nakita)
+    (Pronoun ko)
+    (NP (NP (DET ang) (N asong)) (V dumamba))))",(S  (NP (P sa) (N silid.))  (VP   (V nakita)   (Pronoun ko)   (NP (NP (DET ang) (N asong)) (V dumamba)))),sa silid. nakita ko ang asong dumamba,To/at/in [silid.] saw [ko] [ang] dog jumped
+Naglakad ako nang mabilis para maabutan ang unang tren.,naglakad ako nang mabilis para maabutan ang unang tren.,I walked quickly so that I might catch the first train.,True,"(S
+  (V naglakad)
+  (NP
+    (NP
+      (NP (NP (NP (Pronoun ako)) (Adv nang)) (Adv mabilis))
+      (PP (P para) (V maabutan) (NP (DET ang) (Adj unang))))
+    (N tren.)))",(S  (V naglakad)  (NP   (NP    (NP (NP (NP (Pronoun ako)) (Adv nang)) (Adv mabilis))    (PP (P para) (V maabutan) (NP (DET ang) (Adj unang))))   (N tren.))),"(S
+  (V naglakad)
+  (NP
+    (NP
+      (NP (NP (NP (Pronoun ako)) (Adv nang)) (Adv mabilis))
+      (PP (P para) (V maabutan) (NP (DET ang) (Adj unang))))
+    (N tren.)))",(S  (V naglakad)  (NP   (NP    (NP (NP (NP (Pronoun ako)) (Adv nang)) (Adv mabilis))    (PP (P para) (V maabutan) (NP (DET ang) (Adj unang))))   (N tren.))),naglakad ako nang mabilis para maabutan ang unang tren.,Walked i when/of/so that quickly for catch up [ang] first [tren.]
+Huwag mo kalimutang magdala ng kape.,huwag mo kalimutang magdala ng kape.,nan,True,"(S
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala))
+  (NP (P ng) (N kape.)))",(S  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala))  (NP (P ng) (N kape.))),"(S
+  (NP (P ng) (N kape.))
+  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala)))",(S  (NP (P ng) (N kape.))  (VP (V huwag) (NP (NP (Pronoun mo)) (V kalimutang)) (V magdala))),ng kape. huwag mo kalimutang magdala,Of [kape.] don't you/your forget to bring
+Nakita ko ang anak niyang babae.,nakita ko ang anak niyang babae.,nan,True,"(S
+  (VP (V nakita) (Pronoun ko) (NP (DET ang) (N anak)))
+  (NP (NP (Pronoun niyang)) (N babae.)))",(S  (VP (V nakita) (Pronoun ko) (NP (DET ang) (N anak)))  (NP (NP (Pronoun niyang)) (N babae.))),"(S
+  (NP (NP (Pronoun niyang)) (N babae.))
+  (VP (V nakita) (Pronoun ko) (NP (DET ang) (N anak))))",(S  (NP (NP (Pronoun niyang)) (N babae.))  (VP (V nakita) (Pronoun ko) (NP (DET ang) (N anak)))),niyang babae. nakita ko ang anak,His/her [babae.] saw [ko] [ang] child/son/daughter
