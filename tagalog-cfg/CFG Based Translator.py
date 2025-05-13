@@ -5,19 +5,15 @@ from nltk import CFG, ChartParser, Tree, Nonterminal, Production
 import sys
 import time
 import json
-import csv 
+import csv
 import os
 
 def clear_console():
-    """Clears the terminal console."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
 clear_console()
 
-# --- Functions to load linguistic resources from files ---
-
 def load_grammar(filepath):
-    """Loads CFG rules from a .cfg file."""
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             grammar_string = f.read()
@@ -30,14 +26,12 @@ def load_grammar(filepath):
         sys.exit(1)
 
 def load_lexicon(filepath):
-    """Loads lexicon definitions from a TSV file."""
     lexicon = []
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
-            # Assuming TSV format: POS\tword
             reader = csv.reader(f, delimiter='\t')
             for row in reader:
-                if row and len(row) == 2: # Ensure row has POS and word
+                if row and len(row) == 2:
                     pos, word = row
                     lexicon.append((pos, word))
                 elif row:
@@ -51,7 +45,6 @@ def load_lexicon(filepath):
         sys.exit(1)
 
 def load_dictionary(filepath):
-    """Loads translation dictionary from a JSON file."""
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             translation_dict = json.load(f)
@@ -67,23 +60,15 @@ def load_dictionary(filepath):
         print(f"Error loading dictionary from '{filepath}': {e}")
         sys.exit(1)
 
-
-# ==========================================================
-
-# ── A) LOAD CORPUS ─────────────────────────────────────────────────────────────
-
 DATA_FILE = 'Appendix_A_Parallel_Corpus_Tagalog_English.tsv'
-# ======================================================
 
 try:
     df = pd.read_csv(
         DATA_FILE,
         sep='\t',
         header=None,
-        names=['tgl_id', 'Tagalog Phrase/Sentence', 'eng_id', 'English Translation'] # Assign names
+        names=['tgl_id', 'Tagalog Phrase/Sentence', 'eng_id', 'English Translation']
     )
-    # ============================================================================
-
 except FileNotFoundError:
     print(f"Error: File not found at '{DATA_FILE}'. Please check the filename and path.")
     sys.exit(1)
@@ -106,24 +91,19 @@ if missing_cols:
     print("There might be an issue with the file format or the 'names' provided in pd.read_csv.")
     sys.exit(1)
 
-
-# ── B) TOKENIZE ────────────────────────────────────────────────────────────────
-def tokenize_sentence(s): # Renamed to avoid conflict with df['tokens']
+def tokenize_sentence(s):
     if not isinstance(s, str): return []
     s = s.lower()
     return s.split()
 
 df['tokens'] = df['Tagalog Phrase/Sentence'].apply(tokenize_sentence)
 
-# ── C) & D) are now handled by loading external files ───────────────────────────
-
 def simple_lexical_translate(tagalog_words, dictionary):
-    """Performs word-by-word translation using a dictionary."""
-    if not isinstance(tagalog_words, list): # Ensure input is a list
+    if not isinstance(tagalog_words, list):
         return "[Error: Input not a list]"
     english_words = []
     for word in tagalog_words:
-        translated = dictionary.get(str(word).lower(), f"[{word}]") # Ensure word is string
+        translated = dictionary.get(str(word).lower(), f"[{word}]")
         if translated:
             english_words.append(translated)
     if not english_words:
@@ -132,9 +112,6 @@ def simple_lexical_translate(tagalog_words, dictionary):
     if sentence:
         return sentence[0].upper() + sentence[1:]
     return sentence
-
-
-# ── E) Load resources and Build list of Production objects ───────────────────
 
 print("Loading linguistic resources...")
 grammar_rules_cfg = load_grammar('Appendix_Methodology_Resource_Grammar_Tagalog_CFG.cfg')
@@ -179,10 +156,7 @@ except NameError:
     print("Warning: 'df' (DataFrame) not available to check for unknown tokens.")
     print("Skipping automatic addition of unknown words as Nouns.")
 
-
 print(f"Total unique productions in grammar: {len(all_productions)}")
-
-# ── F) BUILD CFG & PARSER ─────────────────────────────────────────────────────
 
 print("Building CFG directly from productions...")
 start_time = time.time()
@@ -194,9 +168,6 @@ except Exception as e:
     sys.exit(1)
 end_time = time.time()
 print(f"CFG and Parser built in {end_time - start_time:.4f} seconds.")
-
-
-# ── G) VERIFY COVERAGE ────────────────────────────────────────────────────────
 
 print("Verifying grammar coverage...")
 try:
@@ -210,12 +181,8 @@ try:
             print("Grammar coverage check passed. All tokens from corpus seem to have lexical rules.")
     else:
         print("Warning: 'tokens' column not found in DataFrame. Cannot perform grammar coverage check against corpus.")
-
 except Exception as e:
     print(f"Error during grammar coverage verification: {e}")
-
-
-# ── H) PARSE-COVERAGE CHECK ───────────────────────────────────────────────────
 
 print("Starting parsing for all sentences...")
 parse_results = []
@@ -224,21 +191,18 @@ parse_times = []
 if 'all_terminals_in_grammar' not in locals():
     all_terminals_in_grammar = set(prod.rhs()[0] for prod in grammar.productions() if prod.is_lexical())
 
-
 for i, toks in enumerate(df['tokens']):
-    if not toks: # Handle empty token lists
+    if not toks:
         parse_results.append(None)
         continue
 
-    # Ensure all tokens are strings before checking presence in all_terminals_in_grammar
     current_tokens_str = [str(t) for t in toks if t is not None]
-    if not current_tokens_str: # if after conversion all are None or list was empty
+    if not current_tokens_str:
         parse_results.append(None)
         continue
 
     unknown_toks = [t for t in current_tokens_str if t not in all_terminals_in_grammar]
     if unknown_toks:
-        # print(f"Skipping sentence due to unknown tokens: {unknown_toks} in {' '.join(current_tokens_str)}")
         parse_results.append(None)
         continue
 
@@ -246,11 +210,9 @@ for i, toks in enumerate(df['tokens']):
     try:
         parses = list(parser.parse(current_tokens_str))
         parse_results.append(parses[0] if parses else None)
-    except ValueError as ve: # Catch specific NLTK parser error for words not in grammar
-        # print(f"ValueError during parsing for tokens '{' '.join(current_tokens_str)}': {ve}")
+    except ValueError as ve:
         parse_results.append(None)
     except Exception as e:
-        # print(f"General error during parsing for tokens '{' '.join(current_tokens_str)}': {e}")
         parse_results.append(None)
     sent_end_time = time.time()
     parse_times.append(sent_end_time - sent_start_time)
@@ -266,10 +228,6 @@ if not unparsed_sentences_df.empty:
     print("\n--- Unparsed Sentences (first 10 examples) ---")
     for idx, row in unparsed_sentences_df.head(10).iterrows():
         print(f"Original: {row['Tagalog Phrase/Sentence']}")
-        # print(f"Tokens: {row['tokens']}")
-        # unknown_in_unparsed = [t for t in row['tokens'] if t not in all_terminals_in_grammar]
-        # if unknown_in_unparsed:
-        # print(f"Unknown tokens causing parse failure: {unknown_in_unparsed}")
     print("--------------------------")
 
 if parse_times:
@@ -278,47 +236,34 @@ if parse_times:
 else:
     print("No sentences were attempted for parsing (likely all had unknown tokens).")
 
-
-# ── I) TREE-REWRITE TRANSLATION ───────────────────────────────────────────────
-
 def rewrite(tree):
     if not isinstance(tree, Tree):
-        return tree # Return terminals as is
-    # Rule 1: VP NP -> NP VP (Verb-Subject to Subject-Verb)
+        return tree
     if tree.label() == "S" and len(tree) == 2:
         child1, child2 = tree
         if isinstance(child1, Tree) and child1.label() == "VP" and \
            isinstance(child2, Tree) and child2.label() == "NP":
-            return Tree("S", [rewrite(child2), rewrite(child1)]) # Recursively rewrite children
+            return Tree("S", [rewrite(child2), rewrite(child1)])
 
-    # Rule 2: NP AY VP -> NP VP (Remove AY inversion marker)
     if tree.label() == "S" and len(tree) == 3:
         child1, child2, child3 = tree
-        # Check if child2 is 'AY' (terminal) or an AY Phrase
         is_ay_terminal = (not isinstance(child2, Tree) and str(child2).lower() == 'ay')
         is_ay_phrase = (isinstance(child2, Tree) and child2.label() == 'AY')
 
         if isinstance(child1, Tree) and child1.label() == "NP" and \
            is_ay_phrase and \
            isinstance(child3, Tree) and child3.label() == "VP":
-            # AY phrase, we might want its children if it's not just the word 'ay'
-            # For simplicity here, we assume AY is a simple marker and just take NP and VP
             return Tree("S", [rewrite(child1), rewrite(child3)])
 
-    # Default: recursively process children and rebuild tree
     return Tree(tree.label(), [rewrite(child) for child in tree])
 
-
-# ── J) APPLY REWRITE AND SHOW EXAMPLES ────────────────────────────────────────
 df['rewritten_tree'] = df['parse_tree'].apply(lambda t: rewrite(t) if t and isinstance(t, Tree) else None)
 
 print("\n=== Examples of Parsed Sentences (with Rewrites and Translations) ===")
-# Displaying fewer examples on console as full output will be in CSV
 parsed_examples_display = df[df['parsed']].head(10)
 
 if parsed_examples_display.empty:
     print("\nNo sentences were successfully parsed based on the current grammar.")
-    # ... (suggestions remain the same)
 else:
     for index, row in parsed_examples_display.iterrows():
         original_sentence = row['Tagalog Phrase/Sentence']
@@ -333,14 +278,18 @@ else:
         print(f"Reference English:  {reference_english}")
         print("\nParsed Tagalog Tree:")
         if parsed_tree:
-            parsed_tree.pretty_print(maxwidth=100) # Limit width for console
+            parsed_tree.pretty_print(maxwidth=100)
+            print("\nCFG Rules used for this parse:")
+            rules_used_for_this_tree = set(parsed_tree.productions())
+            for rule in sorted(list(rules_used_for_this_tree), key=lambda x: str(x)):
+                print(f"  {rule}")
         else:
             print("  (No parse tree generated)")
 
         print("\nRewritten Tagalog Tree:")
         if rewritten_tree:
             rewritten_leaves = rewritten_tree.leaves()
-            rewritten_tree.pretty_print(maxwidth=100) # Limit width
+            rewritten_tree.pretty_print(maxwidth=100)
             print(f"\nRewritten Tagalog Text: {' '.join(rewritten_leaves)}")
             simple_translation = simple_lexical_translate(rewritten_leaves, translation_dictionary)
             print(f"Simple Lexical Tx:    {simple_translation}")
@@ -349,7 +298,6 @@ else:
 
 print("-" * 40)
 
-# ── K) PREPARE AND WRITE ALL DATA TO CSV ───────────────────────────────────────
 print("\nPreparing data for CSV output...")
 csv_output_data = []
 
@@ -389,7 +337,6 @@ for index, row in df.iterrows():
             entry['Rewritten Tree (Compact)'] = "N/A (No rewrite)"
             entry['Rewritten Tree (Pretty Single Line)'] = "N/A (No rewrite)"
             entry['Rewritten Tagalog Text'] = "N/A (No rewrite)"
-            # If parsed but not rewritten, translate from original parsed leaves
             entry['Simple Lexical Translation'] = simple_lexical_translate(parse_tree_obj.leaves(), translation_dictionary)
     else:
         entry['Parsed Tree (Compact)'] = "Not Parsed"
@@ -397,12 +344,10 @@ for index, row in df.iterrows():
         entry['Rewritten Tree (Compact)'] = "Not Parsed"
         entry['Rewritten Tree (Pretty Single Line)'] = "Not Parsed"
         entry['Rewritten Tagalog Text'] = "Not Parsed"
-        # Attempt lexical translation on original tokens if not parsed
-        if tokens_list: # only if tokens exist
+        if tokens_list:
              entry['Simple Lexical Translation'] = simple_lexical_translate(tokens_list, translation_dictionary)
         else:
             entry['Simple Lexical Translation'] = "[No tokens]"
-
 
     csv_output_data.append(entry)
 
