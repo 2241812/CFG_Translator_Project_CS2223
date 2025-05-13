@@ -122,7 +122,7 @@ structural_rules = [
     ("Adj", ["Adj", "NP"]), 
     ("Adj", ["Adj", "CONJ", "Adj"]), 
 
-    # Plural Noun structure (kept for clarity, though NP rule added)
+    # Plural Noun structure 
     ("PluralN", ["MGA", "N"]),
 
     
@@ -190,9 +190,7 @@ structural_rules = [
 # ==============================================================================
 # == Part 2: (Tagalog Word List with Part-of-Speech Tags) ==
 # ==============================================================================
-# --- Added latest batch of frequent/needed words with *best-guess* POS tags ---
-# --- !!! PLEASE REVIEW AND VERIFY THESE TAGS !!! ---
-# --- Includes words and some inflected forms found in the TSV ---
+
 lexicon_definitions = [
     # Determiners (Markers)
     ("DET", "ang"), ("DET", "si"), ("DET", "sina"),
@@ -246,7 +244,7 @@ lexicon_definitions = [
     ("ProperName", "australia"),
     ("ProperName", "hapon"), 
 
-    # Verbs (Includes some common inflected forms from the TSV)
+    # Verbs 
     ("V", "kumain"), ("V", "nagluto"), ("V", "tumakbo"), ("V", "uminom"), ("V", "naglakad"),
     ("V", "kumusta"), ("V", "kamusta"), ("V", "pupunta"), ("V", "umuulan"), ("V", "pakiabot"),
     ("V", "huwag"), ("V", "magalala"),("V", "mabuhay"), ("V", "tulungan"), ("V", "tama"),
@@ -364,7 +362,7 @@ lexicon_definitions = [
     ("P", "mula"),
     ("P", "kay"),
     ("P", "ng"), 
-    # Adverbs (Includes some common inflected forms from the TSV)
+    # Adverbs 
     ("Adv", "mabilis"), ("Adv", "kahapon"), ("Adv", "na"), ("Adv", "agad"),
     ("Adv", "ngayon"), ("Adv", "diyan"), ("Adv", "hindi"), ("Adv", "palagi"),
     ("Adv", "doon"), ("Adv", "nang"), ("Adv", "kaya"), ("Adv", "kahit"), ("Adv", "paano"),
@@ -399,7 +397,7 @@ lexicon_definitions = [
     ("Adv", "saan"), 
     ("Adv", "nasaan"), 
 
-    # Nouns (Includes some common inflected forms from the TSV)
+    # Nouns 
     ("N", "bata"), ("N", "aso"), ("N", "pusa"), ("N", "bahay"), ("N", "pagkain"),
     ("N", "asin"), ("N", "panahon"), ("N", "guro"), ("N", "pangalan"), ("N", "banyo"),
     ("N", "araw"), ("N", "oras"), ("N", "gabi"), ("N", "sinigang"), ("N", "libro"), ("N", "tubig"),
@@ -425,7 +423,7 @@ lexicon_definitions = [
     ("N", "babae"),
     ("N", "pera"),
     ("N", "lolo"),
-    ("N", "hapon"), # Can be ProperName (Japanese) or Noun (afternoon)
+    ("N", "hapon"), 
     ("N", "istasyon"),
     ("N", "uri"),
     ("N", "kape"),
@@ -533,7 +531,7 @@ lexicon_definitions = [
     ("N", "activities"), 
 
 
-    # Adjectives (Includes some common inflected forms from the TSV)
+    # Adjectives
     ("Adj", "maganda"), ("Adj", "isang"), ("Adj", "mahal"), ("Adj", "mabuti"),
     ("Adj", "maraming"),("Adj", "mukhang"), ("Adj", "tama"), ("Adj", "wala"),
     ("Adj", "bagong"), ("Adj", "malaya"), ("Adj", "pantay-pantay"), ("Adj", "berde"),
@@ -625,9 +623,9 @@ lexicon_definitions = [
 
 
 # ==============================================================================
-# == Part 3: Bilingual Dictionary (Tagalog -> English Word Map) ==
+# == Part 3: Bilingual Dictionary 
 # ==============================================================================
-# --- Added translations for newly added lexicon words ---
+
 translation_dictionary = {
     # Pronouns
     "ako": "i", "ikaw": "you", "siya": "he/she", "niya": "his/her", "kanya": "his/her",
@@ -653,7 +651,7 @@ translation_dictionary = {
     "australia": "australia",
     "hapon": "japanese", 
 
-    # Verbs (Includes translations for some common inflected forms)
+    # Verbs 
     "kumain": "ate/eaten", "nagluto": "cooked", "tumakbo": "ran", "uminom": "drank",
     "naglakad": "walked", "kumusta": "how is/are", "kamusta": "how is/are",
     "pupunta": "will go", "umuulan": "raining", "pakiabot": "please pass", "huwag": "don't",
@@ -726,7 +724,7 @@ translation_dictionary = {
     "ng": "of", 
 
 
-    # Adverbs (Includes translations for some common inflected forms)
+    # Adverbs 
     "mabilis": "quickly", "kahapon": "yesterday", "na": "now/already", "agad": "immediately",
     "ngayon": "today/now", "diyan": "there", "hindi": "not", "palagi": "always",
     "doon": "there (far)", "nang": "when/of/so that", "kaya": "so/maybe/can", "kahit": "even if/although", "paano": "how",
@@ -761,7 +759,7 @@ translation_dictionary = {
     "nasaan": "where is", 
 
 
-    # Nouns (Includes translations for some common inflected forms)
+    # Nouns 
     "bata": "child", "aso": "dog", "pusa": "cat", "bahay": "house", "pagkain": "food",
     "asin": "salt", "panahon": "weather/time", "guro": "teacher", "pangalan": "name",
     "banyo": "bathroom", "araw": "day/sun", "oras": "time/hour", "gabi": "night",
@@ -820,7 +818,7 @@ translation_dictionary = {
     "bus": "bus", 
 
 
-    # Adjectives (Includes translations for some common inflected forms)
+    # Adjectives 
     "maganda": "beautiful", "isang": "a/one", "mahal": "love/expensive", "mabuti": "good/fine",
     "maraming": "many", "mukhang": "looks like/seems", "bagong": "new",
     "malaya": "free", "pantay-pantay": "equal", "berde": "green", "masarap": "delicious/pleasant",
